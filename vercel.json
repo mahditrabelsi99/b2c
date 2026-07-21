@@ -1,10 +1,4 @@
 {
-  "outputDirectory": "overrides/app/static",
-  "cleanUrls": true,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "outputDirectory": ".",
+  "buildCommand": "npm run build-translations"
 }
