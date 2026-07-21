@@ -1,12 +1,10 @@
 {
-  "version": 2,
-  "builds": [
+  "outputDirectory": "overrides/app/static",
+  "cleanUrls": true,
+  "rewrites": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "."
-      }
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
