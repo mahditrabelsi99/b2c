@@ -11,7 +11,7 @@ module.exports = [
     {
         id: 'RefArch',
         l10n: {
-            supportedCurrencies: ['USD', 'EUR'],
+            supportedCurrencies: ['USD'],
             defaultCurrency: 'USD',
             defaultLocale: 'en-US',
             supportedLocales: [
@@ -19,11 +19,11 @@ module.exports = [
                     id: 'en-US',
                     // alias: 'us',
                     preferredCurrency: 'USD'
-                },
-                {
-                    id: 'fr-FR',
-                    preferredCurrency: 'EUR'
                 }
+                // NOTE: fr-FR removed. The shared demo SCAPI backend
+                // (org f_ecom_aaia_prd, site RefArch) has only en-US activated,
+                // so any SCAPI call with locale=fr-FR returns 400 "Unsupported Locale".
+                // Re-add once the locale is activated in Business Manager.
             ]
         }
     }
