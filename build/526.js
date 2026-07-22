@@ -1,1 +1,2 @@
 "use strict";(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[526],{59526(e,r,i){i.r(r);var s=i(77810),o=i(75826),_=i.n(o),a=i(17778),l=i(85579);const n=({regions:e})=>s.createElement(a.r,{className:"mobile-1r-1c",columns:1},e.map(e=>s.createElement(l.Region,{key:e.id,region:e})));n.displayName="MobileGrid1r1c",n.propTypes={regions:_().arrayOf(l.regionPropType).isRequired};const c=n;i.d(r,["MobileGrid1r1c",0,n,"default",0,c])}}]);
+//# sourceMappingURL=526.js.map

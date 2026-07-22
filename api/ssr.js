@@ -32,6 +32,7 @@ process.env.MOBIFY_PROPERTY_ID = process.env.MOBIFY_PROPERTY_ID || 'demo-storefr
 // ---------------------------------------------------------------------------
 
 const path = require('path')
+const crypto = require('crypto')
 
 // The built server bundle is CommonJS (module.exports = { app, get, handler, ... })
 // and exposes the raw Express `app` we added via `export {app}` in overrides/app/ssr.js.
@@ -47,6 +48,23 @@ if (typeof app !== 'function') {
     )
 }
 
+// pwa-kit-runtime's _setRequestId middleware (build-remote-server.js:507) expects
+// an `x-correlation-id` or `x-apigateway-event` request header — provided by AWS
+// API Gateway in an MRT deployment. Vercel (and any other host) sends neither, so
+// res.locals.requestId stays undefined and CorrelationIdProvider crashes with
+// "TypeError: correlationId is not a function". We must inject the header BEFORE
+// the Express app processes the request, because _setRequestId is mounted by
+// pwa-kit-runtime before our `customizeApp` callback runs.
+function handler(req, res) {
+    if (!req.headers['x-correlation-id']) {
+        req.headers['x-correlation-id'] = crypto.randomUUID()
+    }
+    return app(req, res)
+}
+
+// Expose the raw Express app too, so local dev harnesses (scripts/vercel-local.js)
+// can wrap it in http.createServer for a faithful reproduction of the Vercel path.
+handler.app = app
+
 // Vercel's Node runtime invokes the default export as `(req, res) => void`.
-// An Express app instance is itself a request listener with that signature.
-module.exports = app
+module.exports = handler
