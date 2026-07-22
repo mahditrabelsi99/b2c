@@ -22,6 +22,7 @@
     { "source": "/reset-password-landing", "destination": "/api/ssr" },
     { "source": "/social-callback", "destination": "/api/ssr" },
 
+    { "source": "/mobify/proxy/api/shopper/auth/(.*)", "destination": "/api/ssr" },
     { "source": "/mobify/proxy/api/(.*)", "destination": "https://xfdy2axw.api.commercecloud.salesforce.com/$1" },
     { "source": "/mobify/proxy/ocapi/(.*)", "destination": "https://production-sitegenesis-dw.demandware.net/$1" },
 

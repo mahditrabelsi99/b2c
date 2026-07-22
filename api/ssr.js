@@ -34,6 +34,7 @@ process.env.MOBIFY_PROPERTY_ID = process.env.MOBIFY_PROPERTY_ID || 'demo-storefr
 const path = require('path')
 const crypto = require('crypto')
 const fs = require('fs')
+const https = require('https')
 
 // The built server bundle is CommonJS (module.exports = { app, get, handler, ... })
 // and exposes the raw Express `app` we added via `export {app}` in overrides/app/ssr.js.
@@ -99,6 +100,137 @@ function serveBundleAsset(req, res, relativePath) {
 }
 // ---------------------------------------------------------------------------
 
+// --- Transparent SLAS redirect_uri rewriter ---------------------------------
+// The reference SLAS API client (44cfcf31-…) only allow-lists a fixed set of
+// redirect URIs: http://localhost:3000/callback, http://localhost/callback,
+// http://127.0.0.1:3000/callback, and https://*.mobify-storefront.com/callback.
+// The Vercel domain (e.g. https://b2c-beta.vercel.app/callback) is not among
+// them and the client has no admin access to add it. Rather than block the
+// demo entirely, we intercept /mobify/proxy/api/shopper/auth/* calls, swap
+// the caller's real redirect_uri for a registered one on the way to SLAS,
+// then swap it back on the response so the browser/SDK sees its own URL.
+// This is a demo-only pattern; a proper deployment should register the real
+// redirect URI with the SLAS client.
+const SLAS_HOST = 'xfdy2axw.api.commercecloud.salesforce.com'
+const REGISTERED_REDIRECT_ORIGIN = 'http://localhost:3000'
+const SHOPPER_AUTH_PATH_RE = /^\/mobify\/proxy\/api\/(shopper\/auth\/.+?)(\?.*)?$/
+
+function publicOrigin(req) {
+    // Prefer the incoming request's own host (works for preview and prod aliases).
+    const forwardedHost = req.headers['x-forwarded-host'] || req.headers.host
+    const forwardedProto = req.headers['x-forwarded-proto'] || 'https'
+    return `${forwardedProto}://${forwardedHost}`
+}
+
+function swapRedirectUri(value, from, to) {
+    if (!value || !value.startsWith(from)) return value
+    return to + value.slice(from.length)
+}
+
+function proxyShopperAuth(req, res, match) {
+    const origin = publicOrigin(req)
+    // Rewrite the URL's query string (used by GET /authorize).
+    const parsed = new URL(req.url, 'http://placeholder')
+    const originalRedirect = parsed.searchParams.get('redirect_uri')
+    if (originalRedirect) {
+        const rewritten = swapRedirectUri(
+            originalRedirect,
+            origin,
+            REGISTERED_REDIRECT_ORIGIN
+        )
+        if (rewritten !== originalRedirect) {
+            parsed.searchParams.set('redirect_uri', rewritten)
+        }
+    }
+    const outgoingPath = `/${match[1]}${parsed.search || ''}`
+
+    // Buffer the incoming body (used by POST /token, form-urlencoded with
+    // redirect_uri as one of the fields).
+    const chunks = []
+    req.on('data', (chunk) => chunks.push(chunk))
+    req.on('end', () => {
+        let body = Buffer.concat(chunks)
+        const ct = (req.headers['content-type'] || '').toLowerCase()
+        if (body.length > 0 && ct.startsWith('application/x-www-form-urlencoded')) {
+            const form = new URLSearchParams(body.toString('utf8'))
+            const bodyRedirect = form.get('redirect_uri')
+            if (bodyRedirect) {
+                const rewritten = swapRedirectUri(
+                    bodyRedirect,
+                    origin,
+                    REGISTERED_REDIRECT_ORIGIN
+                )
+                if (rewritten !== bodyRedirect) {
+                    form.set('redirect_uri', rewritten)
+                    body = Buffer.from(form.toString(), 'utf8')
+                }
+            }
+        }
+
+        const upstreamHeaders = {}
+        for (const [k, v] of Object.entries(req.headers)) {
+            // Hop-by-hop and identity headers must not be forwarded verbatim.
+            if (
+                k === 'host' ||
+                k === 'connection' ||
+                k === 'content-length' ||
+                k === 'x-forwarded-for' ||
+                k === 'x-forwarded-host' ||
+                k === 'x-forwarded-proto' ||
+                k === 'x-vercel-id' ||
+                k === 'x-vercel-deployment-url' ||
+                k === 'x-vercel-forwarded-for'
+            ) {
+                continue
+            }
+            upstreamHeaders[k] = v
+        }
+        upstreamHeaders['host'] = SLAS_HOST
+        if (body.length > 0) upstreamHeaders['content-length'] = String(body.length)
+
+        const upstream = https.request(
+            {host: SLAS_HOST, method: req.method, path: outgoingPath, headers: upstreamHeaders},
+            (upstreamRes) => {
+                const responseHeaders = {...upstreamRes.headers}
+                // Swap the Location header back so the browser/SDK sees its own domain.
+                if (responseHeaders.location) {
+                    responseHeaders.location = swapRedirectUri(
+                        responseHeaders.location,
+                        REGISTERED_REDIRECT_ORIGIN,
+                        origin
+                    )
+                }
+                // Do not forward the upstream Set-Cookie Domain attribute; leave the
+                // cookie host-only so it binds to the caller's own domain.
+                if (responseHeaders['set-cookie']) {
+                    responseHeaders['set-cookie'] = []
+                        .concat(responseHeaders['set-cookie'])
+                        .map((c) => c.replace(/;\s*Domain=[^;]+/i, ''))
+                }
+                res.writeHead(upstreamRes.statusCode || 502, responseHeaders)
+                upstreamRes.pipe(res)
+            }
+        )
+        upstream.on('error', (err) => {
+            if (!res.headersSent) {
+                res.statusCode = 502
+                res.setHeader('Content-Type', 'text/plain')
+            }
+            res.end(`Bad gateway to SLAS: ${err.message}`)
+        })
+        if (body.length > 0) upstream.write(body)
+        upstream.end()
+    })
+    req.on('error', (err) => {
+        if (!res.headersSent) {
+            res.statusCode = 400
+            res.setHeader('Content-Type', 'text/plain')
+        }
+        res.end(`Bad request: ${err.message}`)
+    })
+}
+// ---------------------------------------------------------------------------
+
 // pwa-kit-runtime's _setRequestId middleware (build-remote-server.js:507) expects
 // an `x-correlation-id` or `x-apigateway-event` request header — provided by AWS
 // API Gateway in an MRT deployment. Vercel (and any other host) sends neither, so
@@ -112,6 +244,12 @@ function handler(req, res) {
     const bundleMatch = req.url && req.url.match(BUNDLE_URL_RE)
     if (bundleMatch) {
         return serveBundleAsset(req, res, bundleMatch[1])
+    }
+
+    // Transparently rewrite redirect_uri on SLAS auth calls; see block above.
+    const authMatch = req.url && req.url.match(SHOPPER_AUTH_PATH_RE)
+    if (authMatch) {
+        return proxyShopperAuth(req, res, authMatch)
     }
 
     if (!req.headers['x-correlation-id']) {
