@@ -1,0 +1,1 @@
+"use strict";(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[173],{56316(e,_,t){t.r(_);var l=t(77810);t.d(_,["default",0,()=>l.createElement("h1",{style:{textAlign:"center",fontSize:"4rem"}},"hello new route!")])}}]);

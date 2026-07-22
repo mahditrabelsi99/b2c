@@ -1,106 +1,86 @@
 {
   "name": "client",
-  "hash": "4bd0fcfb2e7933a4e6da",
-  "publicPath": "/mobify/bundle/development/",
+  "hash": "da3989ba0839fe7cb6a6",
+  "publicPath": "",
   "outputPath": "C:\\Users\\mtrabelsi\\Desktop\\retail-react-app\\build",
   "assetsByChunkName": {
     "main": [
-      "main.js",
-      "main.js.map"
+      "main.js"
     ],
     "salesforce-retail-react-app-app-components-shopper-agent": [
-      "salesforce-retail-react-app-app-components-shopper-agent.js",
-      "salesforce-retail-react-app-app-components-shopper-agent.js.map"
+      "salesforce-retail-react-app-app-components-shopper-agent.js"
     ],
     "pages-home": [
-      "pages-home.js",
-      "pages-home.js.map"
+      "pages-home.js"
     ],
     "pages-my-new-route": [
-      "pages-my-new-route.js",
-      "pages-my-new-route.js.map"
+      "pages-my-new-route.js"
     ],
     "pages-login": [
-      "pages-login.js",
-      "pages-login.js.map"
+      "pages-login.js"
     ],
     "pages-registration": [
-      "pages-registration.js",
-      "pages-registration.js.map"
+      "pages-registration.js"
     ],
     "pages-reset-password": [
-      "pages-reset-password.js",
-      "pages-reset-password.js.map"
+      "pages-reset-password.js"
     ],
     "pages-account": [
-      "pages-account.js",
-      "pages-account.js.map"
+      "pages-account.js"
     ],
     "pages-cart": [
-      "pages-cart.js",
-      "pages-cart.js.map"
+      "pages-cart.js"
     ],
     "pages-checkout": [
-      "pages-checkout.js",
-      "pages-checkout.js.map"
+      "pages-checkout.js"
     ],
     "pages-checkout-one-click": [
-      "pages-checkout-one-click.js",
-      "pages-checkout-one-click.js.map"
+      "pages-checkout-one-click.js"
     ],
     "pages-confirmation": [
-      "pages-confirmation.js",
-      "pages-confirmation.js.map"
+      "pages-confirmation.js"
     ],
     "pages-social-login-redirect": [
-      "pages-social-login-redirect.js",
-      "pages-social-login-redirect.js.map"
+      "pages-social-login-redirect.js"
     ],
     "pages-login-redirect": [
-      "pages-login-redirect.js",
-      "pages-login-redirect.js.map"
+      "pages-login-redirect.js"
     ],
     "pages-product-detail": [
-      "pages-product-detail.js",
-      "pages-product-detail.js.map"
+      "pages-product-detail.js"
     ],
     "pages-product-list": [
-      "pages-product-list.js",
-      "pages-product-list.js.map"
+      "pages-product-list.js"
     ],
     "pages-store-locator": [
-      "pages-store-locator.js",
-      "pages-store-locator.js.map"
+      "pages-store-locator.js"
     ],
     "pages-account-wishlist": [
-      "pages-account-wishlist.js",
-      "pages-account-wishlist.js.map"
+      "pages-account-wishlist.js"
     ],
     "pages-checkout-payment-processing": [
-      "pages-checkout-payment-processing.js",
-      "pages-checkout-payment-processing.js.map"
+      "pages-checkout-payment-processing.js"
     ],
     "pages-page-not-found": [
-      "pages-page-not-found.js",
-      "pages-page-not-found.js.map"
+      "pages-page-not-found.js"
     ],
     "vendor": [
-      "vendor.js",
-      "vendor.js.map"
+      "vendor.js"
     ]
   },
   "assets": [
     {
       "type": "asset",
       "name": "vendor.js",
-      "size": 6108760,
+      "size": 1716861,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
+        "minimized": true,
         "related": {
-          "sourceMap": "vendor.js.map"
+          "license": "vendor.js.LICENSE.txt"
         }
       },
       "chunkNames": [
@@ -113,22 +93,20 @@
       "auxiliaryChunkIdHints": [],
       "filteredRelated": 1,
       "chunks": [
-        "vendor"
+        121
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "main.js",
-      "size": 2078743,
+      "size": 376883,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "main.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "main"
@@ -136,24 +114,21 @@
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "main"
+        792
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "pages-account.js",
-      "size": 381500,
+      "size": 86990,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-account.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "pages-account"
@@ -163,24 +138,21 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-account"
+        291
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "pages-checkout-one-click.js",
-      "size": 362406,
+      "size": 83841,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-checkout-one-click.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "pages-checkout-one-click"
@@ -190,24 +162,21 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-checkout-one-click"
+        650
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "pages-checkout.js",
-      "size": 349676,
+      "size": 79386,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-checkout.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "pages-checkout"
@@ -217,51 +186,21 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-checkout"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "pages-product-list.js",
-      "size": 213787,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-product-list.js.map"
-        }
-      },
-      "chunkNames": [
-        "pages-product-list"
-      ],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "pages-product-list"
+        766
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "pages-cart.js",
-      "size": 170449,
+      "size": 42844,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-cart.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "pages-cart"
@@ -271,24 +210,52 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-cart"
+        788
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
-      "name": "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c.js",
-      "size": 113211,
+      "name": "pages-product-list.js",
+      "size": 38749,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c.js.map"
-        }
+        "minimized": true
+      },
+      "chunkNames": [
+        "pages-product-list"
+      ],
+      "chunkIdHints": [
+        "vendors"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        176,
+        273,
+        306,
+        458,
+        526,
+        703,
+        823,
+        928
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "12.js",
+      "size": 28704,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
       },
       "chunkNames": [],
       "chunkIdHints": [
@@ -296,24 +263,21 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c"
+        12
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "pages-confirmation.js",
-      "size": 103199,
+      "size": 23855,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-confirmation.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "pages-confirmation"
@@ -323,24 +287,21 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-confirmation"
+        877
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
-      "name": "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js.js",
-      "size": 71374,
+      "name": "736.js",
+      "size": 16492,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [],
       "chunkIdHints": [
@@ -348,24 +309,21 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js"
+        736
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "pages-product-detail.js",
-      "size": 69966,
+      "size": 16168,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-product-detail.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "pages-product-detail"
@@ -375,78 +333,21 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-product-detail"
+        875
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
-      "name": "salesforce-retail-react-app-app-components-shopper-agent.js",
-      "size": 67915,
+      "name": "446.js",
+      "size": 15501,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "salesforce-retail-react-app-app-components-shopper-agent.js.map"
-        }
-      },
-      "chunkNames": [
-        "salesforce-retail-react-app-app-components-shopper-agent"
-      ],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "salesforce-retail-react-app-app-components-shopper-agent"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "pages-account-wishlist.js",
-      "size": 51652,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-account-wishlist.js.map"
-        }
-      },
-      "chunkNames": [
-        "pages-account-wishlist"
-      ],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "pages-account-wishlist"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a.js",
-      "size": 48316,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [],
       "chunkIdHints": [
@@ -454,24 +355,21 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a"
+        446
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
-      "name": "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx.js",
-      "size": 48048,
+      "name": "852.js",
+      "size": 14709,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [],
       "chunkIdHints": [
@@ -479,255 +377,22 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "vendors-node_modules_salesforce_retail-react-app_app_pages_home_index_jsx.js",
-      "size": 45919,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "vendors-node_modules_salesforce_retail-react-app_app_pages_home_index_jsx.js.map"
-        }
-      },
-      "chunkNames": [],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_pages_home_index_jsx"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "vendors-node_modules_salesforce_retail-react-app_app_assets_js_active-data_js.js",
-      "size": 34892,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "vendors-node_modules_salesforce_retail-react-app_app_assets_js_active-data_js.js.map"
-        }
-      },
-      "chunkNames": [],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_assets_js_active-data_js"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b.js",
-      "size": 31943,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b.js.map"
-        }
-      },
-      "chunkNames": [],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "vendors-node_modules_salesforce_retail-react-app_app_components_radio-card_index_jsx-node_mod-0d83fd.js",
-      "size": 31293,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "vendors-node_modules_salesforce_retail-react-app_app_components_radio-card_index_jsx-node_mod-0d83fd.js.map"
-        }
-      },
-      "chunkNames": [],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_radio-card_index_jsx-node_mod-0d83fd"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "pages-reset-password.js",
-      "size": 27327,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-reset-password.js.map"
-        }
-      },
-      "chunkNames": [
-        "pages-reset-password"
-      ],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "pages-reset-password"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "pages-login.js",
-      "size": 20753,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-login.js.map"
-        }
-      },
-      "chunkNames": [
-        "pages-login"
-      ],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "pages-login"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa.js",
-      "size": 19511,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa.js.map"
-        }
-      },
-      "chunkNames": [],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "pages-checkout-payment-processing.js",
-      "size": 16626,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-checkout-payment-processing.js.map"
-        }
-      },
-      "chunkNames": [
-        "pages-checkout-payment-processing"
-      ],
-      "chunkIdHints": [
-        "vendors"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "pages-checkout-payment-processing"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "pages-social-login-redirect.js",
-      "size": 13352,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-social-login-redirect.js.map"
-        }
-      },
-      "chunkNames": [
-        "pages-social-login-redirect"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "pages-social-login-redirect"
+        505,
+        852
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "pages-home.js",
-      "size": 12164,
+      "size": 13780,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-home.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "pages-home"
@@ -735,72 +400,241 @@
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-home"
+        339
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
-      "name": "node_modules_salesforce_retail-react-app_app_page-designer_assets_image-with-text_index_jsx.js",
-      "size": 9403,
+      "name": "87.js",
+      "size": 10695,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "node_modules_salesforce_retail-react-app_app_page-designer_assets_image-with-text_index_jsx.js.map"
-        }
+        "minimized": true
+      },
+      "chunkNames": [],
+      "chunkIdHints": [
+        "vendors"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        87
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "salesforce-retail-react-app-app-components-shopper-agent.js",
+      "size": 10671,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [
+        "salesforce-retail-react-app-app-components-shopper-agent"
+      ],
+      "chunkIdHints": [
+        "vendors"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        371
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "51.js",
+      "size": 9710,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [],
+      "chunkIdHints": [
+        "vendors"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        51
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "981.js",
+      "size": 7716,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [],
+      "chunkIdHints": [
+        "vendors"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        981
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "pages-reset-password.js",
+      "size": 5844,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [
+        "pages-reset-password"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        215
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "pages-login.js",
+      "size": 4515,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [
+        "pages-login"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        729
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "pages-account-wishlist.js",
+      "size": 3705,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [
+        "pages-account-wishlist"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        505
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "pages-checkout-payment-processing.js",
+      "size": 3630,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [
+        "pages-checkout-payment-processing"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        77
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "pages-social-login-redirect.js",
+      "size": 3008,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [
+        "pages-social-login-redirect"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        312
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "703.js",
+      "size": 2284,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
       },
       "chunkNames": [],
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_assets_image-with-text_index_jsx"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "pages-registration.js",
-      "size": 9369,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-registration.js.map"
-        }
-      },
-      "chunkNames": [
-        "pages-registration"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "pages-registration"
+        703
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "pages-page-not-found.js",
-      "size": 7812,
+      "size": 1952,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-page-not-found.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "pages-page-not-found"
@@ -808,162 +642,43 @@
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-page-not-found"
+        64
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
-      "name": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r1c_index_jsx.js",
-      "size": 4079,
+      "name": "pages-registration.js",
+      "size": 1553,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r1c_index_jsx.js.map"
-        }
+        "minimized": true
       },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r1c_index_jsx"
+      "chunkNames": [
+        "pages-registration"
       ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r2c_index_jsx.js",
-      "size": 4077,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r2c_index_jsx.js.map"
-        }
-      },
-      "chunkNames": [],
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r2c_index_jsx"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r3c_index_jsx.js",
-      "size": 4077,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r3c_index_jsx.js.map"
-        }
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r3c_index_jsx"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid3r1c_index_jsx.js",
-      "size": 4077,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid3r1c_index_jsx.js.map"
-        }
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid3r1c_index_jsx"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid3r2c_index_jsx.js",
-      "size": 4077,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid3r2c_index_jsx.js.map"
-        }
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid3r2c_index_jsx"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid1r1c_index_jsx.js",
-      "size": 4002,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid1r1c_index_jsx.js.map"
-        }
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid1r1c_index_jsx"
+        197
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "pages-store-locator.js",
-      "size": 2973,
+      "size": 518,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-store-locator.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "pages-store-locator"
@@ -971,49 +686,141 @@
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-store-locator"
+        540
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
-      "name": "pages-my-new-route.js",
-      "size": 2730,
+      "name": "176.js",
+      "size": 484,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-my-new-route.js.map"
-        }
+        "minimized": true
       },
-      "chunkNames": [
-        "pages-my-new-route"
-      ],
+      "chunkNames": [],
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-my-new-route"
+        176
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "273.js",
+      "size": 484,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        273
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "306.js",
+      "size": 484,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        306
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "458.js",
+      "size": 484,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        458
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "823.js",
+      "size": 484,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        823
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "526.js",
+      "size": 462,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        526
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "pages-login-redirect.js",
-      "size": 2006,
+      "size": 337,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "pages-login-redirect.js.map"
-        }
+        "minimized": true
       },
       "chunkNames": [
         "pages-login-redirect"
@@ -1021,32 +828,50 @@
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "pages-login-redirect"
+        930
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
-      "name": "_1242.js",
-      "size": 272,
+      "name": "pages-my-new-route.js",
+      "size": 246,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "javascriptModule": false,
-        "related": {
-          "sourceMap": "_1242.js.map"
-        }
+        "minimized": true
+      },
+      "chunkNames": [
+        "pages-my-new-route"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        173
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "42.js",
+      "size": 95,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true
       },
       "chunkNames": [],
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
       "chunks": [
-        "_1242"
+        42
       ],
       "auxiliaryChunks": []
     }
@@ -1055,8 +880,8 @@
     "main": {
       "name": "main",
       "chunks": [
-        "vendor",
-        "main"
+        121,
+        792
       ],
       "assets": [
         {
@@ -1068,16 +893,16 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 2,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "salesforce-retail-react-app-app-components-shopper-agent": {
       "name": "salesforce-retail-react-app-app-components-shopper-agent",
       "chunks": [
-        "vendor",
-        "salesforce-retail-react-app-app-components-shopper-agent"
+        121,
+        371
       ],
       "assets": [
         {
@@ -1089,36 +914,32 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 2,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-home": {
       "name": "pages-home",
       "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_pages_home_index_jsx",
-        "pages-home"
+        339
       ],
       "assets": [
-        {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_pages_home_index_jsx.js"
-        },
         {
           "name": "pages-home.js"
         }
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 2,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-my-new-route": {
       "name": "pages-my-new-route",
       "chunks": [
-        "pages-my-new-route"
+        173
       ],
       "assets": [
         {
@@ -1127,15 +948,15 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-login": {
       "name": "pages-login",
       "chunks": [
-        "pages-login"
+        729
       ],
       "assets": [
         {
@@ -1144,15 +965,15 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-registration": {
       "name": "pages-registration",
       "chunks": [
-        "pages-registration"
+        197
       ],
       "assets": [
         {
@@ -1161,15 +982,15 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-reset-password": {
       "name": "pages-reset-password",
       "chunks": [
-        "pages-reset-password"
+        215
       ],
       "assets": [
         {
@@ -1178,44 +999,36 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-account": {
       "name": "pages-account",
       "chunks": [
-        "vendor",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b",
-        "pages-account-wishlist",
-        "pages-account"
+        121,
+        51,
+        852,
+        12,
+        736,
+        291
       ],
       "assets": [
         {
           "name": "vendor.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a.js"
+          "name": "51.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa.js"
+          "name": "852.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx.js"
+          "name": "12.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c.js"
-        },
-        {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b.js"
-        },
-        {
-          "name": "pages-account-wishlist.js"
+          "name": "736.js"
         },
         {
           "name": "pages-account.js"
@@ -1223,36 +1036,32 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 8,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-cart": {
       "name": "pages-cart",
       "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa",
-        "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b",
-        "pages-cart"
+        121,
+        51,
+        446,
+        852,
+        788
       ],
       "assets": [
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a.js"
+          "name": "vendor.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa.js"
+          "name": "51.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js.js"
+          "name": "446.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx.js"
-        },
-        {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b.js"
+          "name": "852.js"
         },
         {
           "name": "pages-cart.js"
@@ -1260,44 +1069,40 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 6,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-checkout": {
       "name": "pages-checkout",
       "chunks": [
-        "vendor",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa",
-        "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_radio-card_index_jsx-node_mod-0d83fd",
-        "pages-checkout"
+        121,
+        51,
+        446,
+        852,
+        12,
+        981,
+        766
       ],
       "assets": [
         {
           "name": "vendor.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a.js"
+          "name": "51.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa.js"
+          "name": "446.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js.js"
+          "name": "852.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx.js"
+          "name": "12.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c.js"
-        },
-        {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_radio-card_index_jsx-node_mod-0d83fd.js"
+          "name": "981.js"
         },
         {
           "name": "pages-checkout.js"
@@ -1305,44 +1110,40 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 8,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-checkout-one-click": {
       "name": "pages-checkout-one-click",
       "chunks": [
-        "vendor",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa",
-        "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_radio-card_index_jsx-node_mod-0d83fd",
-        "pages-checkout-one-click"
+        121,
+        51,
+        446,
+        852,
+        12,
+        981,
+        650
       ],
       "assets": [
         {
           "name": "vendor.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a.js"
+          "name": "51.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa.js"
+          "name": "446.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js.js"
+          "name": "852.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx.js"
+          "name": "12.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c.js"
-        },
-        {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_radio-card_index_jsx-node_mod-0d83fd.js"
+          "name": "981.js"
         },
         {
           "name": "pages-checkout-one-click.js"
@@ -1350,20 +1151,24 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 8,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-confirmation": {
       "name": "pages-confirmation",
       "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a",
-        "pages-confirmation"
+        121,
+        51,
+        877
       ],
       "assets": [
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a.js"
+          "name": "vendor.js"
+        },
+        {
+          "name": "51.js"
         },
         {
           "name": "pages-confirmation.js"
@@ -1371,15 +1176,15 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 2,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-social-login-redirect": {
       "name": "pages-social-login-redirect",
       "chunks": [
-        "pages-social-login-redirect"
+        312
       ],
       "assets": [
         {
@@ -1388,15 +1193,15 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-login-redirect": {
       "name": "pages-login-redirect",
       "chunks": [
-        "pages-login-redirect"
+        930
       ],
       "assets": [
         {
@@ -1405,20 +1210,20 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-product-detail": {
       "name": "pages-product-detail",
       "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js",
-        "pages-product-detail"
+        446,
+        875
       ],
       "assets": [
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js.js"
+          "name": "446.js"
         },
         {
           "name": "pages-product-detail.js"
@@ -1426,32 +1231,36 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 2,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-product-list": {
       "name": "pages-product-list",
       "chunks": [
-        "pages-product-list"
+        121,
+        928
       ],
       "assets": [
+        {
+          "name": "vendor.js"
+        },
         {
           "name": "pages-product-list.js"
         }
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-store-locator": {
       "name": "pages-store-locator",
       "chunks": [
-        "pages-store-locator"
+        540
       ],
       "assets": [
         {
@@ -1460,28 +1269,28 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-account-wishlist": {
       "name": "pages-account-wishlist",
       "chunks": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa",
-        "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b",
-        "pages-account-wishlist"
+        121,
+        51,
+        736,
+        505
       ],
       "assets": [
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a.js"
+          "name": "vendor.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa.js"
+          "name": "51.js"
         },
         {
-          "name": "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b.js"
+          "name": "736.js"
         },
         {
           "name": "pages-account-wishlist.js"
@@ -1489,15 +1298,15 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 4,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-checkout-payment-processing": {
       "name": "pages-checkout-payment-processing",
       "chunks": [
-        "pages-checkout-payment-processing"
+        77
       ],
       "assets": [
         {
@@ -1506,15 +1315,15 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     },
     "pages-page-not-found": {
       "name": "pages-page-not-found",
       "chunks": [
-        "pages-page-not-found"
+        64
       ],
       "assets": [
         {
@@ -1523,8 +1332,8 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
     }
@@ -1532,231 +1341,219 @@
   "generator": "loadable-components",
   "chunks": [
     {
-      "id": "main",
+      "id": 792,
       "files": [
         "main.js"
       ]
     },
     {
-      "id": "salesforce-retail-react-app-app-components-shopper-agent",
+      "id": 371,
       "files": [
         "salesforce-retail-react-app-app-components-shopper-agent.js"
       ]
     },
     {
-      "id": "_1242",
+      "id": 42,
       "files": [
-        "_1242.js"
+        "42.js"
       ]
     },
     {
-      "id": "vendors-node_modules_salesforce_retail-react-app_app_assets_js_active-data_js",
+      "id": 87,
       "files": [
-        "vendors-node_modules_salesforce_retail-react-app_app_assets_js_active-data_js.js"
+        "87.js"
       ]
     },
     {
-      "id": "node_modules_salesforce_retail-react-app_app_page-designer_assets_image-with-text_index_jsx",
+      "id": 703,
       "files": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_assets_image-with-text_index_jsx.js"
+        "703.js"
       ]
     },
     {
-      "id": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid1r1c_index_jsx",
+      "id": 526,
       "files": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid1r1c_index_jsx.js"
+        "526.js"
       ]
     },
     {
-      "id": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r1c_index_jsx",
+      "id": 823,
       "files": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r1c_index_jsx.js"
+        "823.js"
       ]
     },
     {
-      "id": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r2c_index_jsx",
+      "id": 306,
       "files": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r2c_index_jsx.js"
+        "306.js"
       ]
     },
     {
-      "id": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r3c_index_jsx",
+      "id": 458,
       "files": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid2r3c_index_jsx.js"
+        "458.js"
       ]
     },
     {
-      "id": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid3r1c_index_jsx",
+      "id": 176,
       "files": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid3r1c_index_jsx.js"
+        "176.js"
       ]
     },
     {
-      "id": "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid3r2c_index_jsx",
+      "id": 273,
       "files": [
-        "node_modules_salesforce_retail-react-app_app_page-designer_layouts_mobileGrid3r2c_index_jsx.js"
+        "273.js"
       ]
     },
     {
-      "id": "pages-home",
+      "id": 339,
       "files": [
         "pages-home.js"
       ]
     },
     {
-      "id": "pages-my-new-route",
+      "id": 173,
       "files": [
         "pages-my-new-route.js"
       ]
     },
     {
-      "id": "pages-login",
+      "id": 729,
       "files": [
         "pages-login.js"
       ]
     },
     {
-      "id": "pages-registration",
+      "id": 197,
       "files": [
         "pages-registration.js"
       ]
     },
     {
-      "id": "pages-reset-password",
+      "id": 215,
       "files": [
         "pages-reset-password.js"
       ]
     },
     {
-      "id": "pages-account",
+      "id": 291,
       "files": [
         "pages-account.js"
       ]
     },
     {
-      "id": "pages-cart",
+      "id": 788,
       "files": [
         "pages-cart.js"
       ]
     },
     {
-      "id": "pages-checkout",
+      "id": 766,
       "files": [
         "pages-checkout.js"
       ]
     },
     {
-      "id": "pages-checkout-one-click",
+      "id": 650,
       "files": [
         "pages-checkout-one-click.js"
       ]
     },
     {
-      "id": "pages-confirmation",
+      "id": 877,
       "files": [
         "pages-confirmation.js"
       ]
     },
     {
-      "id": "pages-social-login-redirect",
+      "id": 312,
       "files": [
         "pages-social-login-redirect.js"
       ]
     },
     {
-      "id": "pages-login-redirect",
+      "id": 930,
       "files": [
         "pages-login-redirect.js"
       ]
     },
     {
-      "id": "pages-product-detail",
+      "id": 875,
       "files": [
         "pages-product-detail.js"
       ]
     },
     {
-      "id": "pages-product-list",
+      "id": 928,
       "files": [
         "pages-product-list.js"
       ]
     },
     {
-      "id": "pages-store-locator",
+      "id": 540,
       "files": [
         "pages-store-locator.js"
       ]
     },
     {
-      "id": "pages-account-wishlist",
+      "id": 505,
       "files": [
         "pages-account-wishlist.js"
       ]
     },
     {
-      "id": "pages-checkout-payment-processing",
+      "id": 77,
       "files": [
         "pages-checkout-payment-processing.js"
       ]
     },
     {
-      "id": "pages-page-not-found",
+      "id": 64,
       "files": [
         "pages-page-not-found.js"
       ]
     },
     {
-      "id": "vendor",
+      "id": 121,
       "files": [
         "vendor.js"
       ]
     },
     {
-      "id": "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a",
+      "id": 51,
       "files": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_item-variant_item-attributes_-366c8a.js"
+        "51.js"
       ]
     },
     {
-      "id": "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa",
+      "id": 446,
       "files": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_unavailable-product-confirmat-5d17aa.js"
+        "446.js"
       ]
     },
     {
-      "id": "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js",
+      "id": 852,
       "files": [
-        "vendors-node_modules_salesforce_retail-react-app_app_hooks_use-multiship_js.js"
+        "852.js"
       ]
     },
     {
-      "id": "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx",
+      "id": 12,
       "files": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_order-summary_index_jsx.js"
+        "12.js"
       ]
     },
     {
-      "id": "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c",
+      "id": 736,
       "files": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_action-card_index_jsx-node_mo-9ed19c.js"
+        "736.js"
       ]
     },
     {
-      "id": "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b",
+      "id": 981,
       "files": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_product-item_index_jsx-node_m-ba5a5b.js"
-      ]
-    },
-    {
-      "id": "vendors-node_modules_salesforce_retail-react-app_app_components_radio-card_index_jsx-node_mod-0d83fd",
-      "files": [
-        "vendors-node_modules_salesforce_retail-react-app_app_components_radio-card_index_jsx-node_mod-0d83fd.js"
-      ]
-    },
-    {
-      "id": "vendors-node_modules_salesforce_retail-react-app_app_pages_home_index_jsx",
-      "files": [
-        "vendors-node_modules_salesforce_retail-react-app_app_pages_home_index_jsx.js"
+        "981.js"
       ]
     }
   ]

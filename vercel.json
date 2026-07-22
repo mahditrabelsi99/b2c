@@ -1,12 +1,42 @@
 {
-  "version": 2,
-  "builds": [
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install --include=dev",
+  "functions": {
+    "api/ssr.js": {
+      "maxDuration": 15,
+      "memory": 1024,
+      "includeFiles": "build/**"
+    }
+  },
+  "rewrites": [
+    { "source": "/worker.js", "destination": "/api/ssr" },
+    { "source": "/worker.js.map", "destination": "/api/ssr" },
+    { "source": "/robots.txt", "destination": "/api/ssr" },
+    { "source": "/favicon.ico", "destination": "/api/ssr" },
+    { "source": "/callback", "destination": "/api/ssr" },
+    { "source": "/:shortCode/:tenantId/oauth2/jwks", "destination": "/api/ssr" },
+    { "source": "/api/payment-metadata", "destination": "/api/ssr" },
+    { "source": "/passwordless-login-callback", "destination": "/api/ssr" },
+    { "source": "/passwordless-login-landing", "destination": "/api/ssr" },
+    { "source": "/reset-password-callback", "destination": "/api/ssr" },
+    { "source": "/reset-password-landing", "destination": "/api/ssr" },
+    { "source": "/social-callback", "destination": "/api/ssr" },
+    { "source": "/mobify/(.*)", "destination": "/api/ssr" },
+    { "source": "/(.*)", "destination": "/api/ssr" }
+  ],
+  "headers": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "."
-      }
+      "source": "/mobify/bundle/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, s-maxage=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/worker.js",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400" }
+      ]
     }
   ]
 }

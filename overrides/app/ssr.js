@@ -333,7 +333,7 @@ export async function jwksCaching(req, res, options) {
     }
 }
 
-const {handler} = runtime.createHandler(options, (app) => {
+const {app, handler} = runtime.createHandler(options, (app) => {
     app.use(express.json()) // To parse JSON payloads
     app.use(express.urlencoded({extended: true}))
     // Set default HTTP security headers required by PWA Kit
@@ -514,3 +514,7 @@ const {handler} = runtime.createHandler(options, (app) => {
 // SSR requires that we export a single handler function called 'get', that
 // supports AWS use of the server that we created above.
 export const get = handler
+
+// Add this — the portable Express app for other platforms
+export {app}
+export default app
