@@ -33,6 +33,7 @@ process.env.MOBIFY_PROPERTY_ID = process.env.MOBIFY_PROPERTY_ID || 'demo-storefr
 
 const path = require('path')
 const crypto = require('crypto')
+const fs = require('fs')
 
 // The built server bundle is CommonJS (module.exports = { app, get, handler, ... })
 // and exposes the raw Express `app` we added via `export {app}` in overrides/app/ssr.js.
@@ -48,6 +49,56 @@ if (typeof app !== 'function') {
     )
 }
 
+// --- Static asset serving for /mobify/bundle/<BUNDLE_ID>/* ------------------
+// pwa-kit-runtime's RemoteServerFactory._addStaticAssetServing is a no-op
+// (comment: "Handled by the CDN on remote") because MRT has an eCDN in front.
+// On Vercel there is no such CDN, so client bundles, images, and the loadable
+// stats file all 404 unless we serve them ourselves. This handler strips the
+// /mobify/bundle/<bundleId>/ prefix and streams the file from build/.
+const BUILD_DIR = path.resolve(process.cwd(), 'build')
+const BUNDLE_URL_RE = /^\/mobify\/bundle\/[^/]+\/(.+?)(\?.*)?$/
+const MIME_TYPES = {
+    '.js': 'application/javascript; charset=utf-8',
+    '.mjs': 'application/javascript; charset=utf-8',
+    '.map': 'application/json; charset=utf-8',
+    '.json': 'application/json; charset=utf-8',
+    '.css': 'text/css; charset=utf-8',
+    '.html': 'text/html; charset=utf-8',
+    '.txt': 'text/plain; charset=utf-8',
+    '.svg': 'image/svg+xml',
+    '.png': 'image/png',
+    '.jpg': 'image/jpeg',
+    '.jpeg': 'image/jpeg',
+    '.gif': 'image/gif',
+    '.webp': 'image/webp',
+    '.ico': 'image/x-icon',
+    '.woff': 'font/woff',
+    '.woff2': 'font/woff2',
+    '.ttf': 'font/ttf',
+    '.otf': 'font/otf'
+}
+
+function serveBundleAsset(req, res, relativePath) {
+    const filePath = path.join(BUILD_DIR, relativePath)
+    // Reject any resolved path that escapes BUILD_DIR (path-traversal guard).
+    if (!filePath.startsWith(BUILD_DIR + path.sep) && filePath !== BUILD_DIR) {
+        res.statusCode = 403
+        return res.end('Forbidden')
+    }
+    fs.stat(filePath, (err, stats) => {
+        if (err || !stats.isFile()) {
+            res.statusCode = 404
+            return res.end('Not Found')
+        }
+        const mime = MIME_TYPES[path.extname(filePath).toLowerCase()]
+        if (mime) res.setHeader('Content-Type', mime)
+        res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
+        res.setHeader('Content-Length', String(stats.size))
+        fs.createReadStream(filePath).pipe(res)
+    })
+}
+// ---------------------------------------------------------------------------
+
 // pwa-kit-runtime's _setRequestId middleware (build-remote-server.js:507) expects
 // an `x-correlation-id` or `x-apigateway-event` request header — provided by AWS
 // API Gateway in an MRT deployment. Vercel (and any other host) sends neither, so
@@ -56,6 +107,13 @@ if (typeof app !== 'function') {
 // the Express app processes the request, because _setRequestId is mounted by
 // pwa-kit-runtime before our `customizeApp` callback runs.
 function handler(req, res) {
+    // Serve /mobify/bundle/<id>/* directly from build/ before Express sees it,
+    // otherwise the SSR catch-all in overrides/app/ssr.js returns HTML for JS/img.
+    const bundleMatch = req.url && req.url.match(BUNDLE_URL_RE)
+    if (bundleMatch) {
+        return serveBundleAsset(req, res, bundleMatch[1])
+    }
+
     if (!req.headers['x-correlation-id']) {
         req.headers['x-correlation-id'] = crypto.randomUUID()
     }
