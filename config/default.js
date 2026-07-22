@@ -48,9 +48,9 @@ module.exports = {
             // Determine where the siteRef is located. Valid values include 'path|query_param|none'. Defaults to: 'none'
             site: 'none',
             // Determine where the localeRef is located. Valid values include 'path|query_param|none'. Defaults to: 'none'
-            locale: 'none',
+            locale: 'path',
             // This boolean value dictates whether or not default site or locale values are shown in the url. Defaults to: false
-            showDefaults: false,
+            showDefaults: true,
             // This boolean value dictates whether or not the base path, defined in ssrParameters.envBasePath,
             // is shown in shopper facing urls. Defaults to: false
             showBasePath: false,
