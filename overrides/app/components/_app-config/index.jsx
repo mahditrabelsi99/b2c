@@ -6,6 +6,7 @@
  */
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Helmet} from 'react-helmet'
 import {ChakraProvider} from '@salesforce/retail-react-app/app/components/shared/ui'
 
 // Removes focus for non-keyboard interactions for the whole application
@@ -86,40 +87,48 @@ const AppConfig = ({children, locals = {}}) => {
     const slasPublicClientProxyEndpoint = `${appOrigin}${getEnvBasePath()}${slasPublicProxyPath}`
 
     return (
-        <CommerceApiProvider
-            shortCode={commerceApiConfig.parameters.shortCode}
-            clientId={commerceApiConfig.parameters.clientId}
-            organizationId={commerceApiConfig.parameters.organizationId}
-            siteId={locals.site?.id}
-            locale={locals.locale?.id}
-            currency={locals.locale?.preferredCurrency}
-            redirectURI={redirectURI}
-            proxy={proxy}
-            headers={headers}
-            defaultDnt={DEFAULT_DNT_STATE}
-            logger={createLogger({packageName: 'commerce-sdk-react'})}
-            passwordlessLoginCallbackURI={passwordlessCallbackURI}
-            // Set 'enablePWAKitPrivateClient' to true to use SLAS private client login flows.
-            // Make sure to also enable useSLASPrivateClient in ssr.js when enabling this setting.
-            enablePWAKitPrivateClient={false}
-            privateClientProxyEndpoint={slasPrivateClientProxyEndpoint}
-            publicClientProxyEndpoint={slasPublicClientProxyEndpoint}
-            cookieDomain={commerceApiConfig.cookieDomain}
-            // Uncomment 'hybridAuthEnabled' if the current site has Hybrid Auth enabled. Do NOT set this flag for hybrid storefronts using Plugin SLAS.
-            // hybridAuthEnabled={true}
-            enableHttpOnlySessionCookies={
-                typeof window !== 'undefined'
-                    ? window.__MRT_ENABLE_HTTPONLY_SESSION_COOKIES__ === 'true'
-                    : process.env.MRT_ENABLE_HTTPONLY_SESSION_COOKIES === 'true'
-            }
-        >
-            <MultiSiteProvider site={locals.site} locale={locals.locale} buildUrl={locals.buildUrl}>
+        <>
+            <Helmet>
+                <script
+                    async
+                    src="https://cdn.c360a.salesforce.com/beacon/c360a/2b984df9-aa62-4696-9027-bf775e32b97f/scripts/c360a.min.js"
+                />
+            </Helmet>
+            <CommerceApiProvider
+                shortCode={commerceApiConfig.parameters.shortCode}
+                clientId={commerceApiConfig.parameters.clientId}
+                organizationId={commerceApiConfig.parameters.organizationId}
+                siteId={locals.site?.id}
+                locale={locals.locale?.id}
+                currency={locals.locale?.preferredCurrency}
+                redirectURI={redirectURI}
+                proxy={proxy}
+                headers={headers}
+                defaultDnt={DEFAULT_DNT_STATE}
+                logger={createLogger({packageName: 'commerce-sdk-react'})}
+                passwordlessLoginCallbackURI={passwordlessCallbackURI}
+                /* Set 'enablePWAKitPrivateClient' to true to use SLAS private client login flows.
+                   Make sure to also enable useSLASPrivateClient in ssr.js when enabling this setting. */
+                enablePWAKitPrivateClient={false}
+                privateClientProxyEndpoint={slasPrivateClientProxyEndpoint}
+                publicClientProxyEndpoint={slasPublicClientProxyEndpoint}
+                cookieDomain={commerceApiConfig.cookieDomain}
+                /* Uncomment 'hybridAuthEnabled' if the current site has Hybrid Auth enabled. Do NOT set this flag for hybrid storefronts using Plugin SLAS. */
+                // hybridAuthEnabled={true}
+                enableHttpOnlySessionCookies={
+                    typeof window !== 'undefined'
+                        ? window.__MRT_ENABLE_HTTPONLY_SESSION_COOKIES__ === 'true'
+                        : process.env.MRT_ENABLE_HTTPONLY_SESSION_COOKIES === 'true'
+                }
+            >
+                <MultiSiteProvider site={locals.site} locale={locals.locale} buildUrl={locals.buildUrl}>
                 <StoreLocatorProvider config={storeLocatorConfig}>
                     <ChakraProvider theme={theme}>{children}</ChakraProvider>
                 </StoreLocatorProvider>
             </MultiSiteProvider>
             <ReactQueryDevtools />
         </CommerceApiProvider>
+        </>
     )
 }
 

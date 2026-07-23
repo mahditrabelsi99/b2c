@@ -354,6 +354,8 @@ const {app, handler} = runtime.createHandler(options, (app) => {
                 '*.cimulate.ai'
             ],
             'script-src': [
+                // C360A analytics script
+                'https://cdn.c360a.salesforce.com',
                 // Commerce Client messaging widget bundle (messaging.umd.js)
                 '*.cimulate.ai',
                 // Commerce Client bundle served from the SFCC static CDN
