@@ -8,10 +8,12 @@ import React from 'react'
 import BaseProductTile, {
     Skeleton as BaseSkeleton
 } from '@salesforce/retail-react-app/app/components/product-tile/index'
-import {HIDDEN_PRODUCT_ID_PREFIXES} from '@salesforce/retail-react-app/app/constants'
+// See note in list-menu.jsx — use relative path to reach our overridden constants.
+import {HIDDEN_PRODUCT_ID_PREFIXES} from '../../constants'
 
 const isHiddenId = (id) =>
     typeof id === 'string' &&
+    Array.isArray(HIDDEN_PRODUCT_ID_PREFIXES) &&
     HIDDEN_PRODUCT_ID_PREFIXES.some((prefix) => id.startsWith(prefix))
 
 const ProductTile = (props) => {

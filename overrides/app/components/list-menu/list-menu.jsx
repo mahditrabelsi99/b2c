@@ -4,9 +4,13 @@
 
 import React from 'react'
 import {ListMenu as BaseListMenu} from '@salesforce/retail-react-app/app/components/list-menu/list-menu'
-import {HIDDEN_CATEGORY_IDS} from '@salesforce/retail-react-app/app/constants'
+// Use relative path: importing via '@salesforce/retail-react-app/app/constants' from
+// inside an override resolves to the ORIGINAL template constants (self-loop guard),
+// so HIDDEN_CATEGORY_IDS would be undefined. Relative path hits our override file.
+import {HIDDEN_CATEGORY_IDS} from '../../constants'
 
 const isHidden = (id) =>
+    Array.isArray(HIDDEN_CATEGORY_IDS) &&
     HIDDEN_CATEGORY_IDS.some((prefix) => id === prefix || id?.startsWith(prefix + '-'))
 
 const filterRoot = (root) => {

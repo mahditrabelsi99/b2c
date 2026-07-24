@@ -4,9 +4,11 @@
 
 import React from 'react'
 import {DrawerMenu as BaseDrawerMenu} from '@salesforce/retail-react-app/app/components/drawer-menu/drawer-menu'
-import {HIDDEN_CATEGORY_IDS} from '@salesforce/retail-react-app/app/constants'
+// See note in list-menu.jsx — use relative path to reach our overridden constants.
+import {HIDDEN_CATEGORY_IDS} from '../../constants'
 
 const isHidden = (id) =>
+    Array.isArray(HIDDEN_CATEGORY_IDS) &&
     HIDDEN_CATEGORY_IDS.some((prefix) => id === prefix || id?.startsWith(prefix + '-'))
 
 const filterRoot = (root) => {
