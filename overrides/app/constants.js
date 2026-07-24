@@ -19,4 +19,8 @@ export const CUSTOM_HOME_TITLE = 'HELLO TALAN'
 // Anything whose id starts with one of these is treated as hidden.
 export const HIDDEN_CATEGORY_IDS = ['electronics', 'newarrivals-electronics']
 
+// Product IDs (or id prefixes) that must never render in tiles / scrollers / carousels.
+// Currently: the 4 iPods, which live under the electronics category tree.
+export const HIDDEN_PRODUCT_ID_PREFIXES = ['apple-ipod-']
+
 export * from '@salesforce/retail-react-app/app/constants'
