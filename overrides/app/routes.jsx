@@ -21,9 +21,21 @@ const fallback = <Skeleton height="75vh" width="100%" />
 // Use loadable to split code into smaller js chunks
 const Home = loadable(() => import('./pages/home'), {fallback})
 const MyNewRoute = loadable(() => import('./pages/my-new-route'))
+// Our overridden Product List (adds hidden-product filter to search + category browse).
+// The base template's routes.jsx uses a relative dynamic import for its own PLP, which
+// bypasses the pwa-kit override resolver. Wiring the route to a relative import from
+// THIS file (which lives inside the overrides dir) forces webpack to load our override.
+const ProductList = loadable(() => import('./pages/product-list'), {fallback})
 
 // Bounce anyone landing on a hidden category / product back to the home page.
 const HiddenRedirect = () => <Redirect to="/" />
+
+// Replace the base template's ProductList routes (/search and /category/:categoryId)
+// with ones pointing at OUR overridden ProductList. Everything else is passed through.
+const PRODUCT_LIST_PATHS = new Set(['/search', '/category/:categoryId'])
+const patchedBaseRoutes = _routes.map((route) =>
+    PRODUCT_LIST_PATHS.has(route.path) ? {...route, component: ProductList} : route
+)
 
 const routes = [
     {
@@ -35,10 +47,10 @@ const routes = [
         path: '/my-new-route',
         component: MyNewRoute
     },
-    // Hidden categories: electronics tree + newarrivals-electronics tree.
+    // Hidden categories: electronics tree + newarrivals-electronics tree + gift-certificates.
     // The regex uses path-to-regexp syntax supported by react-router v5.
     {
-        path: '/category/:categoryId(electronics|electronics-.*|newarrivals-electronics|newarrivals-electronics-.*)',
+        path: '/category/:categoryId(electronics|electronics-.*|newarrivals-electronics|newarrivals-electronics-.*|gift-certificates|gift-certificates-.*)',
         component: HiddenRedirect
     },
     // Hidden products (all 4 iPods live under electronics-digital-media-players).
@@ -46,7 +58,7 @@ const routes = [
         path: '/product/:productId(apple-ipod-.*)',
         component: HiddenRedirect
     },
-    ..._routes
+    ...patchedBaseRoutes
 ]
 
 export default () => {

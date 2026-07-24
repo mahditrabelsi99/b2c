@@ -48,6 +48,7 @@ module.exports = {
             // Determine where the siteRef is located. Valid values include 'path|query_param|none'. Defaults to: 'none'
             site: 'none',
             // Determine where the localeRef is located. Valid values include 'path|query_param|none'. Defaults to: 'none'
+            // Set to 'none' so the storefront runs at the site root without a /<locale>/ prefix.
             locale: 'none',
             // This boolean value dictates whether or not default site or locale values are shown in the url. Defaults to: false
             showDefaults: false,

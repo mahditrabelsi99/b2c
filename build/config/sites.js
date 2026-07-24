@@ -20,6 +20,10 @@ module.exports = [
                     // alias: 'us',
                     preferredCurrency: 'USD'
                 }
+                // NOTE: fr-FR removed. The shared demo SCAPI backend
+                // (org f_ecom_aaia_prd, site RefArch) has only en-US activated,
+                // so any SCAPI call with locale=fr-FR returns 400 "Unsupported Locale".
+                // Re-add once the locale is activated in Business Manager.
             ]
         }
     }

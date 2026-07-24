@@ -1,0 +1,1030 @@
+{
+  "categories": [
+    {
+      "categories": [
+        {
+          "id": "newarrivals-womens",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw3dececb3/images/slot/sub_banners/cat-banner-womens-clothing.jpg",
+          "name": "Womens",
+          "onlineSubCategoriesCount": 0,
+          "pageDescription": "New Arrivals in womens fashionable and stylish Shoes, jackets and  all other clothing for unbeatable comfort day in, day out. Practical and fashionable styles wherever the occasion.",
+          "pageTitle": "New Arrivals in Women's Footwear, Outerwear, Clothing & Accessories",
+          "parentCategoryId": "newarrivals",
+          "parentCategoryTree": [
+            {
+              "id": "newarrivals",
+              "name": "New Arrivals"
+            },
+            {
+              "id": "newarrivals-womens",
+              "name": "Womens"
+            }
+          ],
+          "c_enableCompare": false,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwed4ae91a/images/slot/landing/cat-landing-slotbottom-womens-clothing.jpg"
+        },
+        {
+          "id": "newarrivals-mens",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw7c530cbb/images/slot/sub_banners/cat-banner-mens-clothing.jpg",
+          "name": "Mens",
+          "onlineSubCategoriesCount": 0,
+          "pageDescription": "New Arrivals in Mens  jackets and clothing for unbeatable comfort day in, day out. Practical, easy-to-wear styles wherever you're headed.",
+          "pageTitle": "New Arrivals in Men's Clothing, Suits & Accessories",
+          "parentCategoryId": "newarrivals",
+          "parentCategoryTree": [
+            {
+              "id": "newarrivals",
+              "name": "New Arrivals"
+            },
+            {
+              "id": "newarrivals-mens",
+              "name": "Mens"
+            }
+          ],
+          "c_enableCompare": false,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw96c98647/images/slot/landing/cat-landing-slotbottom-mens-dressshirts.jpg"
+        },
+        {
+          "id": "newarrivals-electronics",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwe9063f14/images/slot/sub_banners/cat-banner-electronics.jpg",
+          "name": "Electronics",
+          "onlineSubCategoriesCount": 0,
+          "pageDescription": "Shop New Arrivals in Electronics including the latest in televisions, digital cameras, camcorders, mp3, ipod, mobil phones, GPS & gaming at Commerce Cloud.",
+          "pageTitle": "Shop New Arrivals in Electronics Including Televisions, Digital Cameras, iPods & More",
+          "parentCategoryId": "newarrivals",
+          "parentCategoryTree": [
+            {
+              "id": "newarrivals",
+              "name": "New Arrivals"
+            },
+            {
+              "id": "newarrivals-electronics",
+              "name": "Electronics"
+            }
+          ],
+          "c_enableCompare": false,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw18513b86/images/slot/landing/cat-landing-slotbottom-electronics.jpg"
+        }
+      ],
+      "id": "newarrivals",
+      "name": "New Arrivals",
+      "onlineSubCategoriesCount": 3,
+      "pageDescription": "Shop all new arrivals including women and mens clothing, jewelry, accessories, suits & more at Commerce Cloud",
+      "pageTitle": "Women and Mens New Arrivals in Clothing, Jewelry, Accessories & More",
+      "parentCategoryId": "root",
+      "parentCategoryTree": [
+        {
+          "id": "newarrivals",
+          "name": "New Arrivals"
+        }
+      ],
+      "c_enableCompare": false,
+      "c_headerMenuBanner": "<img alt=\"New Arrivals Image\" src=\"https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwed4ae91a/images/slot/landing/cat-landing-slotbottom-womens-clothing.jpg\" width=\"225\" />",
+      "c_headerMenuOrientation": "Vertical",
+      "c_showInMenu": true
+    },
+    {
+      "categories": [
+        {
+          "categories": [
+            {
+              "id": "womens-outfits",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw04c8c28a/images/slot/sub_banners/cat-banner-womens-outfits.jpg",
+              "name": "Outfits",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "outfits",
+              "pageTitle": "outfits",
+              "parentCategoryId": "womens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "womens-outfits",
+                  "name": "Outfits"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true
+            },
+            {
+              "id": "womens-clothing-tops",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw29a40242/images/slot/sub_banners/cat-banner-womens-tops.jpg",
+              "name": "Tops",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Women's Shirts. Short and long sleeve, Oxford, smart, casual and classic styles for unbeatable comfort from your desk to the great outdoors at Commerce Cloud.",
+              "pageKeywords": "womens shirt, womens dress shirt, womens woven shirt, womens office shirt, womens casual shirt",
+              "pageTitle": "Women's Tops including Short & Long Sleeve, Casual, Classic & More",
+              "parentCategoryId": "womens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "womens-clothing-tops",
+                  "name": "Tops"
+                }
+              ],
+              "c_enableCompare": true,
+              "c_showInMenu": true,
+              "c_sizeChartID": "womens-clothing",
+              "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwb67eddab/images/slot/landing/womens-clothing-tops.jpg"
+            },
+            {
+              "id": "womens-clothing-dresses",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw64f2eff4/images/slot/sub_banners/cat-banner-womens-dresses.jpg",
+              "name": "Dresses",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Women's dresses for all occasions including formal, evening and casual in a variety of colors at Commerce Cloud",
+              "pageTitle": "Women's Dresses for all Occasions",
+              "parentCategoryId": "womens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "womens-clothing-dresses",
+                  "name": "Dresses"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true
+            },
+            {
+              "id": "womens-clothing-bottoms",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwa653c740/images/slot/sub_banners/cat-banner-womens-bottoms.jpg",
+              "name": "Bottoms",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Women's Trousers. Practical, easy-to-wear styles wherever you're headed. Check out Timberland's famous rugged, long-lasting trousers, jeans, cargo pants and more at Commerce Cloud.",
+              "pageKeywords": "womens pants, womens khaki pants, womens cargo pants, combat trousers, combat pants, combats, womens casual pants, womens jeans, womens denim jeans",
+              "pageTitle": "Women's Bottoms Including Khakis, Cargos, Trousers, Jeans & More",
+              "parentCategoryId": "womens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "womens-clothing-bottoms",
+                  "name": "Bottoms"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true,
+              "c_sizeChartID": "womens-clothing"
+            },
+            {
+              "id": "womens-clothing-jackets",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw80c8fec4/images/slot/sub_banners/cat-banner-womens-jackets.jpg",
+              "name": "Jackets & Coats",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Women's Jackets, Coats & Outerwear. Classic outdoor-tested garments with traditional styling details that provide comfort, insulation and ease of movement, whatever the weather at Commerce Cloud.",
+              "pageKeywords": "womens jackets, womens coats, womens leather jackets, womens waterproof jackets, womens insulated jackets, womens vests, womens water resistant jackets",
+              "pageTitle": "Women's Outerwear Including Jackets & Collections",
+              "parentCategoryId": "womens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "womens-clothing-jackets",
+                  "name": "Jackets & Coats"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true,
+              "c_sizeChartID": "womens-clothing"
+            },
+            {
+              "id": "womens-clothing-feeling-red",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw6bf548d4/images/slot/sub_banners/cat-banner-womens-red.jpg",
+              "name": "Feeling Red",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop our Women's Red Store. Shirts, sweaters, knits & more all in red.",
+              "pageKeywords": "red, clothing",
+              "pageTitle": "Womens Clothing All in Red",
+              "parentCategoryId": "womens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "womens-clothing-feeling-red",
+                  "name": "Feeling Red"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true
+            }
+          ],
+          "id": "womens-clothing",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw3dececb3/images/slot/sub_banners/cat-banner-womens-clothing.jpg",
+          "name": "Clothing",
+          "onlineSubCategoriesCount": 6,
+          "pageDescription": "Shop Women's Clothing. Relaxed, timeless classics you can rely on; from denim to corduroys and sweaters to shirts. Huge range of contemporary colours and eco-aware designs: great casualwear at Commerce Cloud",
+          "pageKeywords": "womens outerwear, womens tops, womens bottoms",
+          "pageTitle": "Womens Clothing Including Outerwear, Tops, Bottoms & More",
+          "parentCategoryId": "womens",
+          "parentCategoryTree": [
+            {
+              "id": "womens",
+              "name": "Womens"
+            },
+            {
+              "id": "womens-clothing",
+              "name": "Clothing"
+            }
+          ],
+          "c_enableCompare": false,
+          "c_showInMenu": true,
+          "c_sizeChartID": "womens-clothing",
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwed4ae91a/images/slot/landing/cat-landing-slotbottom-womens-clothing.jpg"
+        },
+        {
+          "categories": [
+            {
+              "id": "womens-jewelry-earrings",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw4e00b746/images/slot/sub_banners/cat-banner-womens-earrings.jpg",
+              "name": "Earrings",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Women's earrings in a variety of colors and styles including button, clip on and curved at Commerce Cloud.",
+              "pageTitle": "Women's Earrings including Button Clip-on, Curved & More",
+              "parentCategoryId": "womens-jewelry",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-jewelry",
+                  "name": "Jewelry"
+                },
+                {
+                  "id": "womens-jewelry-earrings",
+                  "name": "Earrings"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true
+            },
+            {
+              "id": "womens-jewelry-bracelets",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwcf605775/images/slot/sub_banners/cat-banner-womens-braclets.jpg",
+              "name": "Bracelets",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Women's bracelets in a variety of colors and styles including stretched, beaded, cuff & more at Commerce Cloud.",
+              "pageTitle": "Women's Bracelets including Stretched, Cuff, Beaded & More",
+              "parentCategoryId": "womens-jewelry",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-jewelry",
+                  "name": "Jewelry"
+                },
+                {
+                  "id": "womens-jewelry-bracelets",
+                  "name": "Bracelets"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true
+            },
+            {
+              "id": "womens-jewelry-necklaces",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw938ac7b6/images/slot/sub_banners/cat-banner-womens-necklaces.jpg",
+              "name": "Necklaces",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Women's neclaces in a variety of colors and styles including drop, dangled & more at Commerce Cloud.",
+              "pageTitle": "Women's Necklaces including Drop, Dangle & More",
+              "parentCategoryId": "womens-jewelry",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-jewelry",
+                  "name": "Jewelry"
+                },
+                {
+                  "id": "womens-jewelry-necklaces",
+                  "name": "Necklaces"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true
+            }
+          ],
+          "id": "womens-jewelry",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw5562f7ab/images/slot/sub_banners/cat-banner-womens-jewelry.jpg",
+          "name": "Jewelry",
+          "onlineSubCategoriesCount": 3,
+          "pageDescription": "Shop Women's jewelery including earrings, bracelets and necklaces in a variety of colors and sizes",
+          "pageTitle": "Women's Jewelry including Earrings, Bracelets and Necklaces.",
+          "parentCategoryId": "womens",
+          "parentCategoryTree": [
+            {
+              "id": "womens",
+              "name": "Womens"
+            },
+            {
+              "id": "womens-jewelry",
+              "name": "Jewelry"
+            }
+          ],
+          "c_enableCompare": false,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwea703234/images/slot/landing/cat-landing-slotbottom-womens-jewelry.jpg"
+        },
+        {
+          "categories": [
+            {
+              "id": "womens-accessories-scarves",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw8d50ad05/images/slot/sub_banners/cat-banner-womens-scarves.jpg",
+              "name": "Scarves",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Women's Scarves inclduing tweed, pale, basket and spin all at Commerce Cloud.",
+              "pageTitle": "Women's Scarves",
+              "parentCategoryId": "womens-accessories",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-accessories",
+                  "name": "Accessories"
+                },
+                {
+                  "id": "womens-accessories-scarves",
+                  "name": "Scarves"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true
+            },
+            {
+              "id": "womens-accessories-shoes",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwb96d601c/images/slot/sub_banners/cat-banner-womens-shoes.jpg",
+              "name": "Shoes",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop for womens shoes including casual, flat, mid heel and high heels for any occassion at Commerce Cloud",
+              "pageTitle": "Womens Shoes Including Casual, Flat, Mid Heels & High Heels",
+              "parentCategoryId": "womens-accessories",
+              "parentCategoryTree": [
+                {
+                  "id": "womens",
+                  "name": "Womens"
+                },
+                {
+                  "id": "womens-accessories",
+                  "name": "Accessories"
+                },
+                {
+                  "id": "womens-accessories-shoes",
+                  "name": "Shoes"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true,
+              "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw6bba7e49/images/slot/landing/womens-accessories-shoes.jpg"
+            }
+          ],
+          "id": "womens-accessories",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwbf0dd6d8/images/slot/sub_banners/cat-banner-womens-accessories.jpg",
+          "name": "Accessories",
+          "onlineSubCategoriesCount": 2,
+          "pageDescription": "Shop womens accessories including belts, wallets. gloves, hats, watches, luggage & more at Commerce Cloud.",
+          "pageKeywords": "womens accessories, womens belts, womens wallets, womens gloves, womens hats, sunglasses, watches, gloves, hats, scarves, luggage, travel bag, backpack, book bag, laptop bag, hiking backpack, womens socks, womansocks",
+          "pageTitle": "Women's Accessories Belts, Wallets. Gloves, Hats, Watches, Luggage & More",
+          "parentCategoryId": "womens",
+          "parentCategoryTree": [
+            {
+              "id": "womens",
+              "name": "Womens"
+            },
+            {
+              "id": "womens-accessories",
+              "name": "Accessories"
+            }
+          ],
+          "c_enableCompare": false,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwd362166d/images/slot/landing/cat-landing-slotbottom-womens-accessories.jpg"
+        }
+      ],
+      "id": "womens",
+      "name": "Womens",
+      "onlineSubCategoriesCount": 3,
+      "pageDescription": "Women's range. Fashionable and stylish Shoes, jackets and  all other clothing for unbeatable comfort day in, day out. Practical and fashionable styles wherever the occasion.",
+      "pageKeywords": "womens boots, womens shoes, wome sandals, womens clothing, womens apparel, womens jackets",
+      "pageTitle": "Women's Footwear, Outerwear, Clothing & Accessories",
+      "parentCategoryId": "root",
+      "parentCategoryTree": [
+        {
+          "id": "womens",
+          "name": "Womens"
+        }
+      ],
+      "c_enableCompare": true,
+      "c_headerMenuBanner": "<img alt=\"Women's Catalog Image\" src=\"https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwfb5fb74f/images/slot/landing/cat-landing-slotbanner-womens.jpg\" width=\"480\" />",
+      "c_headerMenuOrientation": "Horizontal",
+      "c_showInMenu": true,
+      "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwfb5fb74f/images/slot/landing/cat-landing-slotbanner-womens.jpg"
+    },
+    {
+      "categories": [
+        {
+          "categories": [
+            {
+              "id": "mens-clothing-suits",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwea5eb9e6/images/slot/sub_banners/cat-banner-mens-suits.jpg",
+              "name": "Suits",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Men's suits for business or pleasure. Enjoy from a variety of different styles and cuts at Commerce Cloud.",
+              "pageTitle": "Mens Suits for Business and Casual",
+              "parentCategoryId": "mens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "mens",
+                  "name": "Mens"
+                },
+                {
+                  "id": "mens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "mens-clothing-suits",
+                  "name": "Suits"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true,
+              "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw96119d42/images/slot/landing/cat-landing-slotbottom-mens-suits.jpg"
+            },
+            {
+              "id": "mens-clothing-jackets",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw474fa736/images/slot/sub_banners/cat-banner-mens-jackets.jpg",
+              "name": "Jackets & Coats",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Men's Jackets, Coats & Outerwear. Classic outdoor-tested garments with traditional styling details that provide comfort, insulation and ease of movement, whatever the weather at Commerce Cloud.",
+              "pageKeywords": "mens jackets, mens coats, mens leather jackets, mens waterproof jackets, mens insulated jackets, mens vests, mens water resistant jackets",
+              "pageTitle": "Men's Jackets Including Jackets & Blazzers",
+              "parentCategoryId": "mens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "mens",
+                  "name": "Mens"
+                },
+                {
+                  "id": "mens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "mens-clothing-jackets",
+                  "name": "Jackets & Coats"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true,
+              "c_sizeChartID": "mens-clothing",
+              "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw3721bffd/images/slot/landing/cat-landing-slotbottom-mens-jackets.jpg"
+            },
+            {
+              "id": "mens-clothing-dress-shirts",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw83156bb0/images/slot/sub_banners/cat-banner-mens-shirts.jpg",
+              "name": "Dress Shirts",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Men's dress shirts in a variety of colors and styles including striped, button down, non-iron & more at Commerce Cloud",
+              "pageTitle": "Men's Dress Shirts including Striped, Button Down, Non-Iron & More",
+              "parentCategoryId": "mens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "mens",
+                  "name": "Mens"
+                },
+                {
+                  "id": "mens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "mens-clothing-dress-shirts",
+                  "name": "Dress Shirts"
+                }
+              ],
+              "c_enableCompare": true,
+              "c_showInMenu": true,
+              "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw96c98647/images/slot/landing/cat-landing-slotbottom-mens-dressshirts.jpg"
+            },
+            {
+              "id": "mens-clothing-shorts",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw5b2e7ced/images/slot/sub_banners/cat-banner-mens-shorts.jpg",
+              "name": "Shorts",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Men's spring shorts in cotton. Variety of different fits at Commerce Cloud",
+              "pageTitle": "Men's Spring Shorts",
+              "parentCategoryId": "mens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "mens",
+                  "name": "Mens"
+                },
+                {
+                  "id": "mens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "mens-clothing-shorts",
+                  "name": "Shorts"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true,
+              "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwe5b4b820/images/slot/landing/cat-landing-slotbottom-mens-shorts.jpg"
+            },
+            {
+              "id": "mens-clothing-pants",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw8a00fe1d/images/slot/sub_banners/cat-banner-mens-pants.jpg",
+              "name": "Pants",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Men's Trousers. Practical, easy-to-wear styles wherever you're headed. Check out Commerce Cloud's famous rugged, long-lasting trousers, jeans, cargo pants and more at Commerce Cloud.",
+              "pageKeywords": "mens pants, mens khaki pants, mens cargo pants, combat trousers, combat pants, combats, mens casual pants, mens jeans, mens denim jeans",
+              "pageTitle": "Men's Pants Including Khakis, Cargos, Trousers, Jeans & More",
+              "parentCategoryId": "mens-clothing",
+              "parentCategoryTree": [
+                {
+                  "id": "mens",
+                  "name": "Mens"
+                },
+                {
+                  "id": "mens-clothing",
+                  "name": "Clothing"
+                },
+                {
+                  "id": "mens-clothing-pants",
+                  "name": "Pants"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true,
+              "c_sizeChartID": "mens-clothing",
+              "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw65fd3a16/images/slot/landing/cat-landing-slotbottom-mens-pants.jpg"
+            }
+          ],
+          "id": "mens-clothing",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw7c530cbb/images/slot/sub_banners/cat-banner-mens-clothing.jpg",
+          "name": "Clothing",
+          "onlineSubCategoriesCount": 5,
+          "pageDescription": "Shop Men's Clothing. Relaxed, timeless classics you can rely on; from denim to corduroys and sweaters to shirts. Huge range of contemporary colours and eco-aware designs: great casualwear at Commerce Cloud.",
+          "pageKeywords": "mens outerwear, mens tops, mens bottoms",
+          "pageTitle": "Mens Clothing Including Suits, Tops, Bottoms & More",
+          "parentCategoryId": "mens",
+          "parentCategoryTree": [
+            {
+              "id": "mens",
+              "name": "Mens"
+            },
+            {
+              "id": "mens-clothing",
+              "name": "Clothing"
+            }
+          ],
+          "c_enableCompare": false,
+          "c_showInMenu": true
+        },
+        {
+          "categories": [
+            {
+              "id": "mens-accessories-ties",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwf00cf567/images/slot/sub_banners/cat-banner-mens-ties.jpg",
+              "name": "Ties",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Mens's Ties for all occasions including business or casual at Commerce Cloud",
+              "pageTitle": "Men's Casual and Business Ties",
+              "parentCategoryId": "mens-accessories",
+              "parentCategoryTree": [
+                {
+                  "id": "mens",
+                  "name": "Mens"
+                },
+                {
+                  "id": "mens-accessories",
+                  "name": "Accessories"
+                },
+                {
+                  "id": "mens-accessories-ties",
+                  "name": "Ties"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true
+            },
+            {
+              "id": "mens-accessories-gloves",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw84be6831/images/slot/sub_banners/cat-banner-mens-gloves.jpg",
+              "name": "Gloves",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Men'sGloves . Versatile, commuter, boot, oxford, deer and resolve gloves. All with famous long-lasting quality at Commerce Cloud.",
+              "pageKeywords": "gloves, commuter gloves, boot gloves, oxford gloves, deer gloves, resolve gloves",
+              "pageTitle": "Men's Gloves",
+              "parentCategoryId": "mens-accessories",
+              "parentCategoryTree": [
+                {
+                  "id": "mens",
+                  "name": "Mens"
+                },
+                {
+                  "id": "mens-accessories",
+                  "name": "Accessories"
+                },
+                {
+                  "id": "mens-accessories-gloves",
+                  "name": "Gloves"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true
+            },
+            {
+              "id": "mens-accessories-luggage",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw1d9ba3d2/images/slot/sub_banners/cat-banner-mens-luggage.jpg",
+              "name": "Luggage",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop Men's Wheeled Luggage. Versatile, rugged suitcases, baggage, holdalls and shoulder bags. All with famous long-lasting quality at Commerce Cloud.",
+              "pageKeywords": "suitcase with wheels, wheeled luggage",
+              "pageTitle": "Men's Wheeled Luggage",
+              "parentCategoryId": "mens-accessories",
+              "parentCategoryTree": [
+                {
+                  "id": "mens",
+                  "name": "Mens"
+                },
+                {
+                  "id": "mens-accessories",
+                  "name": "Accessories"
+                },
+                {
+                  "id": "mens-accessories-luggage",
+                  "name": "Luggage"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": true
+            }
+          ],
+          "id": "mens-accessories",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw7ae1ecd1/images/slot/sub_banners/cat-banner-mens-accessories.jpg",
+          "name": "Accessories",
+          "onlineSubCategoriesCount": 3,
+          "pageDescription": "Shop mens accessories including belts, wallets. gloves, hats, watches, luggage & more at Commerce Cloud.",
+          "pageKeywords": "mens accessories, mens belts, mens wallets, mens gloves, mens hats, sunglasses, watches, gloves, hats, scarves, luggage, travel bag, backpack, book bag, laptop bag, hiking backpack, mens socks, man socks",
+          "pageTitle": "Men's Accessories Belts, Wallets. Gloves, Hats, Watches, Luggage & More",
+          "parentCategoryId": "mens",
+          "parentCategoryTree": [
+            {
+              "id": "mens",
+              "name": "Mens"
+            },
+            {
+              "id": "mens-accessories",
+              "name": "Accessories"
+            }
+          ],
+          "c_enableCompare": false,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwd70fdf83/images/slot/landing/cat-landing-slotbottom-mens-accessories.jpg"
+        }
+      ],
+      "id": "mens",
+      "name": "Mens",
+      "onlineSubCategoriesCount": 2,
+      "pageDescription": "Men's range. Hard-wearing boots, jackets and clothing for unbeatable comfort day in, day out. Practical, easy-to-wear styles wherever you're headed.",
+      "pageKeywords": "mens boots, mens shoes, mens clothing, mens apparel, mens jackets",
+      "pageTitle": "Men's Footwear, Outerwear, Clothing & Accessories",
+      "parentCategoryId": "root",
+      "parentCategoryTree": [
+        {
+          "id": "mens",
+          "name": "Mens"
+        }
+      ],
+      "c_enableCompare": true,
+      "c_headerMenuBanner": "<img alt=\"Men's Category Image\" src=\"https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwf5e6423f/images/slot/landing/cat-landing-slotbanner-mens.jpg\" width=\"433\" />",
+      "c_headerMenuOrientation": "Horizontal",
+      "c_showInMenu": true,
+      "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwf5e6423f/images/slot/landing/cat-landing-slotbanner-mens.jpg"
+    },
+    {
+      "categories": [
+        {
+          "categories": [
+            {
+              "id": "electronics-televisions-flat-screen",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw813d8648/images/slot/sub_banners/cat-banner-electronics-tv.jpg",
+              "name": "Flat Screen",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop all Flat Screen Televisions including the latest in LCD and Plasma technology from all the latest brands, makes and models at Commerce Cloud.",
+              "pageKeywords": "flat screen, flat screen television, LCD, plasma, HDTV",
+              "pageTitle": "LCD & Plasma High Definition Flat Screen Televisions",
+              "parentCategoryId": "electronics-televisions",
+              "parentCategoryTree": [
+                {
+                  "id": "electronics",
+                  "name": "Electronics"
+                },
+                {
+                  "id": "electronics-televisions",
+                  "name": "Televisions"
+                },
+                {
+                  "id": "electronics-televisions-flat-screen",
+                  "name": "Flat Screen"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": false
+            },
+            {
+              "id": "electronics-televisions-projection",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw813d8648/images/slot/sub_banners/cat-banner-electronics-tv.jpg",
+              "name": "Projection",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop all Projection Televisions from all the latest brands, makes and models at Commerce Cloud.",
+              "pageKeywords": "projection, projection televisions, HDTV",
+              "pageTitle": "Projection High Definition Televisions",
+              "parentCategoryId": "electronics-televisions",
+              "parentCategoryTree": [
+                {
+                  "id": "electronics",
+                  "name": "Electronics"
+                },
+                {
+                  "id": "electronics-televisions",
+                  "name": "Televisions"
+                },
+                {
+                  "id": "electronics-televisions-projection",
+                  "name": "Projection"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": false
+            }
+          ],
+          "id": "electronics-televisions",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw813d8648/images/slot/sub_banners/cat-banner-electronics-tv.jpg",
+          "name": "Televisions",
+          "onlineSubCategoriesCount": 2,
+          "pageDescription": "Shop the latest Televisions including LCD, Plasma, Flat Screens, Projection including all the top brands, makes and models at Commerce Cloud.",
+          "pageKeywords": "televisions, tvs, LCD, plasma, flat screen, high definition, HDTV, projection",
+          "pageTitle": "Televisions Including LCD, Plasma & More in High Definition",
+          "parentCategoryId": "electronics",
+          "parentCategoryTree": [
+            {
+              "id": "electronics",
+              "name": "Electronics"
+            },
+            {
+              "id": "electronics-televisions",
+              "name": "Televisions"
+            }
+          ],
+          "c_enableCompare": true,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw7de83189/images/slot/landing/cat-landing-tv.jpg"
+        },
+        {
+          "id": "electronics-digital-cameras",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw3ece313a/images/slot/sub_banners/cat-banner-electronics-camera.jpg",
+          "name": "Digital Cameras",
+          "onlineSubCategoriesCount": 0,
+          "pageDescription": "Shop the latest digital cameras from all the top brands, makes and models at Commerce Cloud.",
+          "pageKeywords": "cameras, digital camerasm point and shoot, slr",
+          "pageTitle": "Digital Cameras",
+          "parentCategoryId": "electronics",
+          "parentCategoryTree": [
+            {
+              "id": "electronics",
+              "name": "Electronics"
+            },
+            {
+              "id": "electronics-digital-cameras",
+              "name": "Digital Cameras"
+            }
+          ],
+          "c_enableCompare": true,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw9f855942/images/slot/landing/cat-landing-camera.jpg"
+        },
+        {
+          "id": "electronics-digital-media-players",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw80238404/images/slot/sub_banners/cat-banner-electronics-mp3.jpg",
+          "name": "iPod & MP3 Players",
+          "onlineSubCategoriesCount": 0,
+          "pageDescription": "Shop Digital Media Players including iPods, Creative Zen, Sony & the latest from all the top brands, makes and models at Commerce Cloud.",
+          "pageKeywords": "mp3, iPods, mp3 players",
+          "pageTitle": "iPod & MP3 Digital Media Players",
+          "parentCategoryId": "electronics",
+          "parentCategoryTree": [
+            {
+              "id": "electronics",
+              "name": "Electronics"
+            },
+            {
+              "id": "electronics-digital-media-players",
+              "name": "iPod & MP3 Players"
+            }
+          ],
+          "c_enableCompare": true,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw9d2539ad/images/slot/landing/cat-landing-mp3.jpg"
+        },
+        {
+          "id": "electronics-gps-units",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw3e2eae31/images/slot/sub_banners/cat-banner-electronics-gps.jpg",
+          "name": "GPS Navigation",
+          "onlineSubCategoriesCount": 0,
+          "pageDescription": "Shop the latest in GPS units from Garmin and Tom Tom along with other brands, makes and models at Commerce Cloud.",
+          "pageKeywords": "gps, gps units, garmin, tom tom",
+          "pageTitle": "GPS Units",
+          "parentCategoryId": "electronics",
+          "parentCategoryTree": [
+            {
+              "id": "electronics",
+              "name": "Electronics"
+            },
+            {
+              "id": "electronics-gps-units",
+              "name": "GPS Navigation"
+            }
+          ],
+          "c_enableCompare": true,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw757dcf17/images/slot/landing/cat-landing-gps.jpg"
+        },
+        {
+          "categories": [
+            {
+              "id": "electronics-game-consoles",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwe9063f14/images/slot/sub_banners/cat-banner-electronics.jpg",
+              "name": "Game Consoles",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop game consoles from Xbox, Xbox360, Playstation 2, Playstation 3, Game Cube, Wii, Playstation Portable and Nintento DS at Commerce Cloud.",
+              "pageKeywords": "gaming, xbox, xbox360, ps3, ps2, playstaion 3, psp, game cube, wii, nintendo, nintendo ds",
+              "pageTitle": "Video Game Consoles",
+              "parentCategoryId": "electronics-gaming",
+              "parentCategoryTree": [
+                {
+                  "id": "electronics",
+                  "name": "Electronics"
+                },
+                {
+                  "id": "electronics-gaming",
+                  "name": "Gaming"
+                },
+                {
+                  "id": "electronics-game-consoles",
+                  "name": "Game Consoles"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": false
+            },
+            {
+              "id": "electronic-games",
+              "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwe9063f14/images/slot/sub_banners/cat-banner-electronics.jpg",
+              "name": "Games",
+              "onlineSubCategoriesCount": 0,
+              "pageDescription": "Shop video games from Xbox, Xbox360, Playstation 2, Playstation 3, Game Cube, Wii, Playstation Portable and Nintento DS at Commerce Cloud.",
+              "pageKeywords": "games, xbox, xbox360, ps3, ps2, playstaion 3, psp, game cube, wii, nintendo, nintendo ds",
+              "pageTitle": "Video Games",
+              "parentCategoryId": "electronics-gaming",
+              "parentCategoryTree": [
+                {
+                  "id": "electronics",
+                  "name": "Electronics"
+                },
+                {
+                  "id": "electronics-gaming",
+                  "name": "Gaming"
+                },
+                {
+                  "id": "electronic-games",
+                  "name": "Games"
+                }
+              ],
+              "c_enableCompare": false,
+              "c_showInMenu": false
+            }
+          ],
+          "id": "electronics-gaming",
+          "image": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwe9063f14/images/slot/sub_banners/cat-banner-electronics.jpg",
+          "name": "Gaming",
+          "onlineSubCategoriesCount": 2,
+          "pageDescription": "Shop games and game consoles from Xbox, Xbox360, Playstation 2, Playstation 3, Game Cube, Wii, Playstation Portable and Nintento DS at Commerce Cloud.",
+          "pageKeywords": "gaming, xbox, xbox360, ps3, ps2, playstaion 3, psp, game cube, wii, nintendo, nintendo ds",
+          "pageTitle": "Gaming",
+          "parentCategoryId": "electronics",
+          "parentCategoryTree": [
+            {
+              "id": "electronics",
+              "name": "Electronics"
+            },
+            {
+              "id": "electronics-gaming",
+              "name": "Gaming"
+            }
+          ],
+          "c_enableCompare": true,
+          "c_showInMenu": true,
+          "c_slotBannerImage": "https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dwe4ae860e/images/slot/landing/cat-landing-gaming.jpg"
+        }
+      ],
+      "id": "electronics",
+      "name": "Electronics",
+      "onlineSubCategoriesCount": 5,
+      "pageDescription": "Shop Electronics including the latest in televisions, digital cameras, camcorders, mp3, ipod, mobil phones, GPS & gaming at Commerce Cloud",
+      "pageKeywords": "televisions, digital cameras, camcorders, mp3, ipod, mobil phones, GPS, gaming",
+      "pageTitle": "Shop Electronics Including Televisions, Digital Cameras, iPods & More",
+      "parentCategoryId": "root",
+      "parentCategoryTree": [
+        {
+          "id": "electronics",
+          "name": "Electronics"
+        }
+      ],
+      "c_enableCompare": true,
+      "c_headerMenuBanner": "<img alt=\"Electronics Category Image\" src=\"https://aaia-prd.my.commercecloud.salesforce.com/on/demandware.static/-/Sites-storefront-catalog-m-en/default/dw18513b86/images/slot/landing/cat-landing-slotbottom-electronics.jpg\" width=\"195\" />",
+      "c_headerMenuOrientation": "Vertical",
+      "c_showInMenu": true
+    },
+    {
+      "id": "gift-certificates",
+      "name": "Gift Certificates",
+      "onlineSubCategoriesCount": 0,
+      "parentCategoryId": "root",
+      "parentCategoryTree": [
+        {
+          "id": "gift-certificates",
+          "name": "Gift Certificates"
+        }
+      ],
+      "c_alternativeUrl": "https://aaia-prd.my.commercecloud.salesforce.com/s/RefArch/giftcertpurchase?lang=en_US",
+      "c_enableCompare": false,
+      "c_showInMenu": true
+    },
+    {
+      "id": "top-seller",
+      "name": "Top Sellers",
+      "onlineSubCategoriesCount": 0,
+      "parentCategoryId": "root",
+      "parentCategoryTree": [
+        {
+          "id": "top-seller",
+          "name": "Top Sellers"
+        }
+      ],
+      "c_alternativeUrl": "https://aaia-prd.my.commercecloud.salesforce.com/s/RefArch/search?lang=en_US&amp;cgid=root&amp;srule=top-sellers",
+      "c_enableCompare": false,
+      "c_showInMenu": true
+    }
+  ],
+  "id": "root",
+  "name": "Storefront Catalog - EN",
+  "onlineSubCategoriesCount": 6
+}

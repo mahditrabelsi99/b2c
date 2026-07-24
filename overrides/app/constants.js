@@ -17,7 +17,11 @@ export const CUSTOM_HOME_TITLE = 'HELLO TALAN'
 
 // Category IDs that must be removed from the header nav / drawer nav / PLP.
 // Anything whose id starts with one of these is treated as hidden.
-export const HIDDEN_CATEGORY_IDS = ['electronics', 'newarrivals-electronics']
+export const HIDDEN_CATEGORY_IDS = [
+    'electronics',
+    'newarrivals-electronics',
+    'gift-certificates'
+]
 
 // Product IDs (or id prefixes) that must never render in tiles / scrollers / carousels.
 // Currently: the 4 iPods, which live under the electronics category tree.
