@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "hash": "6d5cf972199ab7364caa",
+  "hash": "292955b0ae51c68c0464",
   "publicPath": "/mobify/bundle/development/",
   "outputPath": "C:\\Users\\mtrabelsi\\Desktop\\retail-react-app\\build",
   "assetsByChunkName": {
@@ -409,7 +409,7 @@
     {
       "type": "asset",
       "name": "pages-product-list.js",
-      "size": 58885,
+      "size": 58896,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
