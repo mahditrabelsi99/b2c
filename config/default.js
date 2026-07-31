@@ -128,10 +128,10 @@ module.exports = {
             isProduction: false
         },
         // Datacloud api config
-        dataCloudAPI: {
-            appSourceId: '7ae070a6-f4ec-4def-a383-d9cacc3f20a1',
-            tenantId: 'g82wgnrvm-ywk9dggrrw8mtggy.pc-rnd'
-        },
+        // dataCloudAPI: {
+        //     appSourceId: '7ae070a6-f4ec-4def-a383-d9cacc3f20a1',
+        //     tenantId: 'g82wgnrvm-ywk9dggrrw8mtggy.pc-rnd'
+        // },
         // When shoppers use passwordless OTP login with one-click checkout, the system saves their shipping and payment information for faster checkout in the future.
         //   To maintain security, implement these safeguards:
         //   1. Captcha - Protects the passwordless login from bots.
