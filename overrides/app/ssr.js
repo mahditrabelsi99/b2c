@@ -351,7 +351,12 @@ const {app, handler} = runtime.createHandler(options, (app) => {
                 'www.gstatic.com', // optional, if icon is on gstatic
                 // Commerce Client messaging widget images
                 'cimulate.ai',
-                '*.cimulate.ai'
+                '*.cimulate.ai',
+                // Google Tag Manager / Google Analytics tracking pixels
+                'www.googletagmanager.com',
+                '*.google-analytics.com',
+                '*.analytics.google.com',
+                '*.g.doubleclick.net'
             ],
             'script-src': [
                 // C360A analytics script
@@ -371,7 +376,13 @@ const {app, handler} = runtime.createHandler(options, (app) => {
                 '*.adyen.com',
                 'pay.google.com',
                 'www.gstatic.com',
-                '*.demandware.net' // Used to load a valid payment scripts in test environment
+                '*.demandware.net', // Used to load a valid payment scripts in test environment
+                // Google Tag Manager loader + tags (GA4, etc.)
+                'www.googletagmanager.com',
+                '*.google-analytics.com',
+                // GTM's inline bootstrap snippet requires an inline script allowance.
+                // Prefer a nonce/hash in production if your infra supports it.
+                "'unsafe-inline'"
             ],
             'connect-src': [
                 // Connect to Einstein APIs
@@ -383,6 +394,11 @@ const {app, handler} = runtime.createHandler(options, (app) => {
                 // Connect to Google Cloud APIs
                 'maps.googleapis.com',
                 'places.googleapis.com',
+                // Google Tag Manager / Google Analytics beacons
+                'www.googletagmanager.com',
+                '*.google-analytics.com',
+                '*.analytics.google.com',
+                '*.g.doubleclick.net',
                 // Connect to SCRT2 URLs
                 '*.salesforce-scrt.com',
                 // Payment gateways
@@ -409,7 +425,9 @@ const {app, handler} = runtime.createHandler(options, (app) => {
                 '*.paypal.com',
                 '*.adyen.com',
                 'payments.google.com',
-                'pay.google.com'
+                'pay.google.com',
+                // Google Tag Manager <noscript> iframe fallback
+                'www.googletagmanager.com'
             ]
         }
     }
