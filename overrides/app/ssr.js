@@ -339,6 +339,213 @@ const {app, handler} = runtime.createHandler(options, (app) => {
     // Set default HTTP security headers required by PWA Kit
     app.use(defaultPwaKitSecurityHeaders)
     // Set custom HTTP security headers
+    // ------------------------------------------------------------------
+    // Google Signals country-TLD hosts used by GA4 for /ads/ga-audiences
+    // and /g/collect. CSP has no wildcard for TLDs, so each country must be
+    // listed explicitly. The list below covers every google.<TLD> Google has
+    // operated for a country/territory (some are legacy/redirect to
+    // google.com and are harmless to keep). The cleaner alternative is to
+    // disable Google Signals in GA4 Admin > Data collection & modification.
+    // ------------------------------------------------------------------
+    const googleCountryHosts = [
+        // Global
+        'www.google.com',
+        // Africa
+        'www.google.dz', // Algeria
+        'www.google.co.ao', // Angola
+        'www.google.bf', // Burkina Faso
+        'www.google.bi', // Burundi
+        'www.google.bj', // Benin
+        'www.google.co.bw', // Botswana
+        'www.google.cd', // DR Congo
+        'www.google.cf', // Central African Republic
+        'www.google.cg', // Republic of the Congo
+        'www.google.ci', // Ivory Coast
+        'www.google.cm', // Cameroon
+        'www.google.cv', // Cape Verde
+        'www.google.dj', // Djibouti
+        'www.google.com.eg', // Egypt
+        'www.google.com.et', // Ethiopia
+        'www.google.ga', // Gabon
+        'www.google.gm', // Gambia
+        'www.google.com.gh', // Ghana
+        'www.google.gp', // Guadeloupe
+        'www.google.co.ke', // Kenya
+        'www.google.co.ls', // Lesotho
+        'www.google.com.ly', // Libya
+        'www.google.co.ma', // Morocco
+        'www.google.mg', // Madagascar
+        'www.google.ml', // Mali
+        'www.google.mu', // Mauritius
+        'www.google.mw', // Malawi
+        'www.google.co.mz', // Mozambique
+        'www.google.com.na', // Namibia
+        'www.google.ne', // Niger
+        'www.google.com.ng', // Nigeria
+        'www.google.rw', // Rwanda
+        'www.google.sc', // Seychelles
+        'www.google.sn', // Senegal
+        'www.google.so', // Somalia
+        'www.google.sh', // Saint Helena
+        'www.google.com.sl', // Sierra Leone
+        'www.google.st', // São Tomé and Príncipe
+        'www.google.td', // Chad
+        'www.google.tg', // Togo
+        'www.google.tn', // Tunisia
+        'www.google.co.tz', // Tanzania
+        'www.google.co.ug', // Uganda
+        'www.google.co.za', // South Africa
+        'www.google.co.zm', // Zambia
+        'www.google.co.zw', // Zimbabwe
+        // Americas
+        'www.google.com.ag', // Antigua and Barbuda
+        'www.google.com.ai', // Anguilla
+        'www.google.com.ar', // Argentina
+        'www.google.as', // American Samoa
+        'www.google.com.bo', // Bolivia
+        'www.google.com.br', // Brazil
+        'www.google.bs', // Bahamas
+        'www.google.com.bz', // Belize
+        'www.google.ca', // Canada
+        'www.google.cl', // Chile
+        'www.google.com.co', // Colombia
+        'www.google.co.cr', // Costa Rica
+        'www.google.com.cu', // Cuba
+        'www.google.dm', // Dominica
+        'www.google.com.do', // Dominican Republic
+        'www.google.com.ec', // Ecuador
+        'www.google.com.gt', // Guatemala
+        'www.google.gy', // Guyana
+        'www.google.hn', // Honduras
+        'www.google.ht', // Haiti
+        'www.google.com.jm', // Jamaica
+        'www.google.com.mx', // Mexico
+        'www.google.ms', // Montserrat
+        'www.google.com.ni', // Nicaragua
+        'www.google.com.pa', // Panama
+        'www.google.com.pe', // Peru
+        'www.google.com.pr', // Puerto Rico
+        'www.google.com.py', // Paraguay
+        'www.google.sr', // Suriname
+        'www.google.com.sv', // El Salvador
+        'www.google.tt', // Trinidad and Tobago
+        'www.google.com.uy', // Uruguay
+        'www.google.com.vc', // Saint Vincent
+        'www.google.co.ve', // Venezuela
+        'www.google.vg', // British Virgin Islands
+        'www.google.co.vi', // US Virgin Islands
+        // Asia
+        'www.google.com.af', // Afghanistan
+        'www.google.am', // Armenia
+        'www.google.az', // Azerbaijan
+        'www.google.com.bd', // Bangladesh
+        'www.google.com.bh', // Bahrain
+        'www.google.bt', // Bhutan
+        'www.google.com.bn', // Brunei
+        'www.google.cn', // China
+        'www.google.com.hk', // Hong Kong
+        'www.google.co.id', // Indonesia
+        'www.google.co.il', // Israel
+        'www.google.co.in', // India
+        'www.google.iq', // Iraq
+        'www.google.jo', // Jordan
+        'www.google.co.jp', // Japan
+        'www.google.kg', // Kyrgyzstan
+        'www.google.com.kh', // Cambodia
+        'www.google.co.kr', // South Korea
+        'www.google.com.kw', // Kuwait
+        'www.google.kz', // Kazakhstan
+        'www.google.la', // Laos
+        'www.google.com.lb', // Lebanon
+        'www.google.lk', // Sri Lanka
+        'www.google.com.mm', // Myanmar
+        'www.google.mn', // Mongolia
+        'www.google.com.my', // Malaysia
+        'www.google.mv', // Maldives
+        'www.google.com.np', // Nepal
+        'www.google.com.om', // Oman
+        'www.google.com.pk', // Pakistan
+        'www.google.com.ph', // Philippines
+        'www.google.ps', // Palestine
+        'www.google.com.qa', // Qatar
+        'www.google.com.sa', // Saudi Arabia
+        'www.google.com.sg', // Singapore
+        'www.google.co.th', // Thailand
+        'www.google.com.tj', // Tajikistan
+        'www.google.tl', // East Timor
+        'www.google.tm', // Turkmenistan
+        'www.google.com.tr', // Turkey
+        'www.google.com.tw', // Taiwan
+        'www.google.ae', // United Arab Emirates
+        'www.google.co.uz', // Uzbekistan
+        'www.google.com.vn', // Vietnam
+        'www.google.com.ye', // Yemen
+        // Europe
+        'www.google.ad', // Andorra
+        'www.google.al', // Albania
+        'www.google.at', // Austria
+        'www.google.ba', // Bosnia and Herzegovina
+        'www.google.be', // Belgium
+        'www.google.bg', // Bulgaria
+        'www.google.by', // Belarus
+        'www.google.ch', // Switzerland
+        'www.google.com.cy', // Cyprus
+        'www.google.cz', // Czech Republic
+        'www.google.de', // Germany
+        'www.google.dk', // Denmark
+        'www.google.ee', // Estonia
+        'www.google.es', // Spain
+        'www.google.fi', // Finland
+        'www.google.fr', // France
+        'www.google.gg', // Guernsey
+        'www.google.gr', // Greece
+        'www.google.hr', // Croatia
+        'www.google.hu', // Hungary
+        'www.google.ie', // Ireland
+        'www.google.im', // Isle of Man
+        'www.google.is', // Iceland
+        'www.google.it', // Italy
+        'www.google.je', // Jersey
+        'www.google.li', // Liechtenstein
+        'www.google.lt', // Lithuania
+        'www.google.lu', // Luxembourg
+        'www.google.lv', // Latvia
+        'www.google.md', // Moldova
+        'www.google.me', // Montenegro
+        'www.google.mk', // North Macedonia
+        'www.google.com.mt', // Malta
+        'www.google.nl', // Netherlands
+        'www.google.no', // Norway
+        'www.google.pl', // Poland
+        'www.google.pt', // Portugal
+        'www.google.ro', // Romania
+        'www.google.rs', // Serbia
+        'www.google.ru', // Russia
+        'www.google.se', // Sweden
+        'www.google.si', // Slovenia
+        'www.google.sk', // Slovakia
+        'www.google.sm', // San Marino
+        'www.google.com.ua', // Ukraine
+        'www.google.co.uk', // United Kingdom
+        // Oceania
+        'www.google.com.au', // Australia
+        'www.google.co.ck', // Cook Islands
+        'www.google.com.fj', // Fiji
+        'www.google.fm', // Micronesia
+        'www.google.ki', // Kiribati
+        'www.google.com.nf', // Norfolk Island
+        'www.google.co.nz', // New Zealand
+        'www.google.pn', // Pitcairn Islands
+        'www.google.com.pg', // Papua New Guinea
+        'www.google.com.sb', // Solomon Islands
+        'www.google.to', // Tonga
+        'www.google.tk', // Tokelau (legacy)
+        'www.google.nr', // Nauru
+        'www.google.nu', // Niue
+        'www.google.vu', // Vanuatu
+        'www.google.ws' // Samoa
+    ]
+
     const contentSecurityPolicy = {
         useDefaults: true,
         directives: {
@@ -354,7 +561,11 @@ const {app, handler} = runtime.createHandler(options, (app) => {
                 '*.cimulate.ai',
                 // Google Tag Manager / Google Analytics tracking pixels
                 'www.googletagmanager.com',
+                // NOTE: CSP wildcards (*.host) do NOT match the apex host,
+                // so both apex and *.subdomain forms must be listed.
+                'google-analytics.com',
                 '*.google-analytics.com',
+                'analytics.google.com',
                 '*.analytics.google.com',
                 '*.g.doubleclick.net',
                 // Google Signals "ads audience" pixels are sent to
@@ -362,8 +573,7 @@ const {app, handler} = runtime.createHandler(options, (app) => {
                 // CSP has no wildcard for TLDs, so each country must be listed.
                 // If you'd rather not maintain this list, disable Google Signals
                 // in GA4 Admin > Data collection > Google signals data collection.
-                'www.google.com',
-                'www.google.tn'
+                ...googleCountryHosts
             ],
             'script-src': [
                 // C360A analytics script
@@ -403,14 +613,17 @@ const {app, handler} = runtime.createHandler(options, (app) => {
                 'places.googleapis.com',
                 // Google Tag Manager / Google Analytics beacons
                 'www.googletagmanager.com',
+                // NOTE: CSP wildcards (*.host) do NOT match the apex host,
+                // so both apex and *.subdomain forms must be listed.
+                'google-analytics.com',
                 '*.google-analytics.com',
+                'analytics.google.com',
                 '*.analytics.google.com',
                 '*.g.doubleclick.net',
                 // GA4 also POSTs events to www.google.com/g/collect (Fetch API).
                 // Google Signals beacons go to google.<TLD>/ads/ga-audiences;
                 // list each country TLD you need, or disable Google Signals.
-                'www.google.com',
-                'www.google.tn',
+                ...googleCountryHosts,
                 // Connect to SCRT2 URLs
                 '*.salesforce-scrt.com',
                 // Payment gateways
