@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "hash": "67a291929792863749aa",
+  "hash": "620e7592ddc1ed5bc6ab",
   "publicPath": "/mobify/bundle/development/",
   "outputPath": "C:\\Users\\mtrabelsi\\Desktop\\retail-react-app\\build",
   "assetsByChunkName": {
@@ -120,7 +120,7 @@
     {
       "type": "asset",
       "name": "main.js",
-      "size": 2108929,
+      "size": 2107981,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,

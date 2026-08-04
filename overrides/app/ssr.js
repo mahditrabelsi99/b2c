@@ -356,7 +356,14 @@ const {app, handler} = runtime.createHandler(options, (app) => {
                 'www.googletagmanager.com',
                 '*.google-analytics.com',
                 '*.analytics.google.com',
-                '*.g.doubleclick.net'
+                '*.g.doubleclick.net',
+                // Google Signals "ads audience" pixels are sent to
+                // google.<TLD>/ads/ga-audiences (TLD = user country).
+                // CSP has no wildcard for TLDs, so each country must be listed.
+                // If you'd rather not maintain this list, disable Google Signals
+                // in GA4 Admin > Data collection > Google signals data collection.
+                'www.google.com',
+                'www.google.tn'
             ],
             'script-src': [
                 // C360A analytics script
@@ -399,6 +406,11 @@ const {app, handler} = runtime.createHandler(options, (app) => {
                 '*.google-analytics.com',
                 '*.analytics.google.com',
                 '*.g.doubleclick.net',
+                // GA4 also POSTs events to www.google.com/g/collect (Fetch API).
+                // Google Signals beacons go to google.<TLD>/ads/ga-audiences;
+                // list each country TLD you need, or disable Google Signals.
+                'www.google.com',
+                'www.google.tn',
                 // Connect to SCRT2 URLs
                 '*.salesforce-scrt.com',
                 // Payment gateways

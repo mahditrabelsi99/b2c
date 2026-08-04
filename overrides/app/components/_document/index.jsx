@@ -33,6 +33,33 @@ const Document = ({
                     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
                 />
                 <meta name="format-detection" content="telephone=no" />
+
+                {/*
+                 * Third-party analytics scripts are rendered here (in the raw
+                 * document <head>) instead of via react-helmet so they load
+                 * exactly ONCE. When placed in <Helmet>, PWA Kit emits them in
+                 * the SSR HTML and react-helmet re-injects them again on the
+                 * client during hydration, causing every event to fire twice.
+                 */}
+
+                {/* Salesforce Data Cloud WebSDK (c360a) */}
+                <script
+                    async
+                    src="https://cdn.c360a.salesforce.com/beacon/c360a/2b984df9-aa62-4696-9027-bf775e32b97f/scripts/c360a.min.js"
+                />
+
+                {/* Google Tag Manager */}
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${GTM_ID}');`
+                    }}
+                />
+                {/* End Google Tag Manager */}
+
                 {head.map((child) => child)}
             </head>
             <body {...bodyAttributes}>
